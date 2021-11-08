@@ -38,9 +38,6 @@ namespace PaivaPrevitalli
             this.buttonCliente = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ferramentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exibirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -100,18 +97,19 @@ namespace PaivaPrevitalli
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonOkCodCli = new System.Windows.Forms.Button();
             this.textBoxPesCodCli = new System.Windows.Forms.TextBox();
             this.labelPesCodCli = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -191,10 +189,7 @@ namespace PaivaPrevitalli
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arquivoToolStripMenuItem,
-            this.ferramentasToolStripMenuItem,
-            this.exibirToolStripMenuItem,
-            this.ajudaToolStripMenuItem});
+            this.arquivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(834, 24);
@@ -203,27 +198,11 @@ namespace PaivaPrevitalli
             // 
             // arquivoToolStripMenuItem
             // 
+            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sairToolStripMenuItem});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
-            // 
-            // ferramentasToolStripMenuItem
-            // 
-            this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
-            this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
-            this.ferramentasToolStripMenuItem.Text = "Ferramentas";
-            // 
-            // exibirToolStripMenuItem
-            // 
-            this.exibirToolStripMenuItem.Name = "exibirToolStripMenuItem";
-            this.exibirToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.exibirToolStripMenuItem.Text = "Exibir";
-            // 
-            // ajudaToolStripMenuItem
-            // 
-            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // groupBox1
             // 
@@ -823,22 +802,6 @@ namespace PaivaPrevitalli
             this.tabPage3.Text = "Pesquisar Tudo";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codigo,
-            this.nome,
-            this.email,
-            this.telefone,
-            this.cel,
-            this.nascimento});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 61);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(593, 310);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // buttonOkCodCli
             // 
             this.buttonOkCodCli.BackColor = System.Drawing.Color.PapayaWhip;
@@ -867,6 +830,22 @@ namespace PaivaPrevitalli
             this.labelPesCodCli.Size = new System.Drawing.Size(169, 19);
             this.labelPesCodCli.TabIndex = 52;
             this.labelPesCodCli.Text = "Pesquisar por Código";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigo,
+            this.nome,
+            this.email,
+            this.telefone,
+            this.cel,
+            this.nascimento});
+            this.dataGridView1.Location = new System.Drawing.Point(3, 61);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(593, 310);
+            this.dataGridView1.TabIndex = 0;
             // 
             // codigo
             // 
@@ -903,6 +882,12 @@ namespace PaivaPrevitalli
             this.nascimento.HeaderText = "Nascimento";
             this.nascimento.Name = "nascimento";
             this.nascimento.Width = 90;
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Text = "Sair";
             // 
             // TelaCliente
             // 
@@ -943,9 +928,6 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.Button buttonCliente;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exibirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -1017,5 +999,6 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.DataGridViewTextBoxColumn telefone;
         private System.Windows.Forms.DataGridViewTextBoxColumn cel;
         private System.Windows.Forms.DataGridViewTextBoxColumn nascimento;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
     }
 }
