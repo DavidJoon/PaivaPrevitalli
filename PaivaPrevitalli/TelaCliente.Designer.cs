@@ -71,8 +71,8 @@ namespace PaivaPrevitalli
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.buttonPesNomCli = new System.Windows.Forms.Button();
+            this.textPesNomCli = new System.Windows.Forms.TextBox();
             this.buttonExCli = new System.Windows.Forms.Button();
             this.buttonAltCli = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -90,7 +90,7 @@ namespace PaivaPrevitalli
             this.label16 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
+            this.labelDigNomCli = new System.Windows.Forms.Label();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -101,6 +101,17 @@ namespace PaivaPrevitalli
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonOkCodCli = new System.Windows.Forms.Button();
+            this.textBoxPesCodCli = new System.Windows.Forms.TextBox();
+            this.labelPesCodCli = new System.Windows.Forms.Label();
+            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -108,6 +119,8 @@ namespace PaivaPrevitalli
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -226,6 +239,7 @@ namespace PaivaPrevitalli
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(21, 22);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -499,8 +513,8 @@ namespace PaivaPrevitalli
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.textBox20);
+            this.tabPage2.Controls.Add(this.buttonPesNomCli);
+            this.tabPage2.Controls.Add(this.textPesNomCli);
             this.tabPage2.Controls.Add(this.buttonExCli);
             this.tabPage2.Controls.Add(this.buttonAltCli);
             this.tabPage2.Controls.Add(this.label10);
@@ -518,7 +532,7 @@ namespace PaivaPrevitalli
             this.tabPage2.Controls.Add(this.label16);
             this.tabPage2.Controls.Add(this.textBox15);
             this.tabPage2.Controls.Add(this.textBox16);
-            this.tabPage2.Controls.Add(this.label18);
+            this.tabPage2.Controls.Add(this.labelDigNomCli);
             this.tabPage2.Controls.Add(this.textBox17);
             this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Controls.Add(this.groupBox6);
@@ -527,27 +541,27 @@ namespace PaivaPrevitalli
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(605, 379);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Pesquisar";
+            this.tabPage2.Text = "Pesquisar por Nome";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonPesNomCli
             // 
-            this.button1.BackColor = System.Drawing.Color.PapayaWhip;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(462, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 23);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonPesNomCli.BackColor = System.Drawing.Color.PapayaWhip;
+            this.buttonPesNomCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPesNomCli.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonPesNomCli.Location = new System.Drawing.Point(462, 8);
+            this.buttonPesNomCli.Name = "buttonPesNomCli";
+            this.buttonPesNomCli.Size = new System.Drawing.Size(37, 23);
+            this.buttonPesNomCli.TabIndex = 51;
+            this.buttonPesNomCli.Text = "OK";
+            this.buttonPesNomCli.UseVisualStyleBackColor = false;
             // 
-            // textBox20
+            // textPesNomCli
             // 
-            this.textBox20.Location = new System.Drawing.Point(243, 9);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(213, 23);
-            this.textBox20.TabIndex = 50;
+            this.textPesNomCli.Location = new System.Drawing.Point(243, 9);
+            this.textPesNomCli.Name = "textPesNomCli";
+            this.textPesNomCli.Size = new System.Drawing.Size(213, 23);
+            this.textPesNomCli.TabIndex = 50;
             // 
             // buttonExCli
             // 
@@ -700,15 +714,15 @@ namespace PaivaPrevitalli
             this.textBox16.Size = new System.Drawing.Size(193, 23);
             this.textBox16.TabIndex = 30;
             // 
-            // label18
+            // labelDigNomCli
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(38, 12);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(199, 19);
-            this.label18.TabIndex = 27;
-            this.label18.Text = "Digite o Nome do Cliente";
+            this.labelDigNomCli.AutoSize = true;
+            this.labelDigNomCli.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelDigNomCli.Location = new System.Drawing.Point(38, 12);
+            this.labelDigNomCli.Name = "labelDigNomCli";
+            this.labelDigNomCli.Size = new System.Drawing.Size(199, 19);
+            this.labelDigNomCli.TabIndex = 27;
+            this.labelDigNomCli.Text = "Digite o Nome do Cliente";
             // 
             // textBox17
             // 
@@ -795,6 +809,101 @@ namespace PaivaPrevitalli
             this.label17.TabIndex = 31;
             this.label17.Text = "Telefone:";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.buttonOkCodCli);
+            this.tabPage3.Controls.Add(this.textBoxPesCodCli);
+            this.tabPage3.Controls.Add(this.labelPesCodCli);
+            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(605, 379);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Pesquisar Tudo";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigo,
+            this.nome,
+            this.email,
+            this.telefone,
+            this.cel,
+            this.nascimento});
+            this.dataGridView1.Location = new System.Drawing.Point(3, 61);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(593, 310);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // buttonOkCodCli
+            // 
+            this.buttonOkCodCli.BackColor = System.Drawing.Color.PapayaWhip;
+            this.buttonOkCodCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOkCodCli.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonOkCodCli.Location = new System.Drawing.Point(495, 16);
+            this.buttonOkCodCli.Name = "buttonOkCodCli";
+            this.buttonOkCodCli.Size = new System.Drawing.Size(37, 23);
+            this.buttonOkCodCli.TabIndex = 54;
+            this.buttonOkCodCli.Text = "OK";
+            this.buttonOkCodCli.UseVisualStyleBackColor = false;
+            // 
+            // textBoxPesCodCli
+            // 
+            this.textBoxPesCodCli.Location = new System.Drawing.Point(276, 17);
+            this.textBoxPesCodCli.Name = "textBoxPesCodCli";
+            this.textBoxPesCodCli.Size = new System.Drawing.Size(213, 23);
+            this.textBoxPesCodCli.TabIndex = 53;
+            // 
+            // labelPesCodCli
+            // 
+            this.labelPesCodCli.AutoSize = true;
+            this.labelPesCodCli.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPesCodCli.Location = new System.Drawing.Point(101, 17);
+            this.labelPesCodCli.Name = "labelPesCodCli";
+            this.labelPesCodCli.Size = new System.Drawing.Size(169, 19);
+            this.labelPesCodCli.TabIndex = 52;
+            this.labelPesCodCli.Text = "Pesquisar por Código";
+            // 
+            // codigo
+            // 
+            this.codigo.HeaderText = "Código";
+            this.codigo.Name = "codigo";
+            this.codigo.Width = 60;
+            // 
+            // nome
+            // 
+            this.nome.HeaderText = "Nome";
+            this.nome.Name = "nome";
+            this.nome.Width = 140;
+            // 
+            // email
+            // 
+            this.email.HeaderText = "E-mail";
+            this.email.Name = "email";
+            this.email.Width = 140;
+            // 
+            // telefone
+            // 
+            this.telefone.HeaderText = "Telefone";
+            this.telefone.Name = "telefone";
+            this.telefone.Width = 70;
+            // 
+            // cel
+            // 
+            this.cel.HeaderText = "Cel";
+            this.cel.Name = "cel";
+            this.cel.Width = 70;
+            // 
+            // nascimento
+            // 
+            this.nascimento.HeaderText = "Nascimento";
+            this.nascimento.Name = "nascimento";
+            this.nascimento.Width = 90;
+            // 
             // TelaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -817,6 +926,9 @@ namespace PaivaPrevitalli
             this.tabPage2.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -864,8 +976,8 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Button buttonPesNomCli;
+        private System.Windows.Forms.TextBox textPesNomCli;
         private System.Windows.Forms.Button buttonExCli;
         private System.Windows.Forms.Button buttonAltCli;
         private System.Windows.Forms.Label label10;
@@ -883,7 +995,7 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label labelDigNomCli;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox6;
@@ -894,5 +1006,16 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button buttonOkCodCli;
+        private System.Windows.Forms.TextBox textBoxPesCodCli;
+        private System.Windows.Forms.Label labelPesCodCli;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nascimento;
     }
 }
