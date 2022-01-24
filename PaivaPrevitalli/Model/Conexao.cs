@@ -10,7 +10,8 @@ namespace PaivaPrevitalli.Model
     {
         static public string conectar()
         {
-            return @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\david.jsilva7\Source\Repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True";
+            return @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pichau\source\repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True";
+
         }
     }
 }

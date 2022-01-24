@@ -32,7 +32,7 @@ namespace PaivaPrevitalli
                 comando.Parameters.AddWithValue("@email", textBox2.Text);
                 comando.Parameters.AddWithValue("@fone", textBox3.Text);
                 comando.Parameters.AddWithValue("@cel", textBox4.Text);
-                comando.Parameters.AddWithValue("@nascimento", dateTimePicker1.Text);
+                comando.Parameters.AddWithValue("@nascimento", textBox20.Text);
                 comando.Parameters.AddWithValue("@rua", textBox5.Text);
                 comando.Parameters.AddWithValue("@bairro", textBox7.Text);
                 comando.Parameters.AddWithValue("@cep", textBox6.Text);
@@ -53,13 +53,13 @@ namespace PaivaPrevitalli
                     textBox2.Clear();
                     textBox3.Clear();
                     textBox4.Clear();
-                    dateTimePicker1.Clear();
+                    textBox20.Clear();
                     textBox5.Clear();
                     textBox7.Clear();
                     textBox6.Clear();
                     textBox9.Clear();
                     textBox8.Clear();
-                    comboBox1.Clear();
+                    comboBox1.Text = string.Empty;
                 }
                 else
                 {
@@ -90,13 +90,15 @@ namespace PaivaPrevitalli
                 textBox17.Clear();
                 textBox16.Clear();
                 textBox15.Clear();
-                dateTimePicker2.Clear();
                 textBox14.Clear();
                 textBox13.Clear();
                 textBox12.Clear();
                 textBox11.Clear();
                 textBox10.Clear();
-               
+                textBox20.Clear();
+                textBox21.Clear();
+                comboBox1.Text = string.Empty;
+
                 return;
             }
             else
@@ -109,7 +111,7 @@ namespace PaivaPrevitalli
                 textBox17.Text = Cliente.EmailCliente;
                 textBox16.Text = Cliente.FoneCliente;
                 textBox15.Text = Cliente.CelCliente;
-                dateTimePicker2.Text = Cliente.NascCliente;
+                textBox20.Text = Cliente.NascCliente;
                 textBox14.Text = Cliente.RuaCliente;
                 textBox13.Text = Cliente.BairroCliente;
                 textBox12.Text = Cliente.CepCliente;
@@ -143,17 +145,18 @@ namespace PaivaPrevitalli
             Cliente.CepCliente = "";
             Cliente.NumCliente = "";
             Cliente.ComplCliente = "";
+            textBox20.Clear();
             textBox19.Clear();
             textBox18.Clear();
             textBox17.Clear();
             textBox16.Clear();
             textBox15.Clear();
-            dateTimePicker2.Clear();
             textBox14.Clear();
             textBox13.Clear();
             textBox12.Clear();
             textBox11.Clear();
             textBox10.Clear();
+            comboBox1.Text = string.Empty;
 
             buttonAltCli.Enabled = false;
             buttonExCli.Enabled = false;
@@ -167,7 +170,7 @@ namespace PaivaPrevitalli
             Cliente.EmailCliente = textBox17.Text;
             Cliente.FoneCliente = textBox16.Text;
             Cliente.CelCliente = textBox15.Text;
-            Cliente.NascCliente = dateTimePicker2.Text;
+            Cliente.NascCliente = textBox21.Text;
             Cliente.RuaCliente = textBox14.Text;
             Cliente.BairroCliente = textBox13.Text;
             Cliente.CepCliente = textBox12.Text;

@@ -201,7 +201,7 @@ namespace PaivaPrevitalli.Controller
             }
             catch
             {
-                MessageBox.Show("Livro não Excluido.");
+                MessageBox.Show("Cliente não Excluido.");
                 Cliente.Retorno = "False";
             }
             finally

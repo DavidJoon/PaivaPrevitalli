@@ -54,7 +54,6 @@ namespace PaivaPrevitalli
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -83,7 +82,6 @@ namespace PaivaPrevitalli
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -110,11 +108,14 @@ namespace PaivaPrevitalli
             this.cel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -245,7 +246,6 @@ namespace PaivaPrevitalli
             this.tabPage1.Controls.Add(this.textBox7);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.textBox4);
@@ -270,6 +270,9 @@ namespace PaivaPrevitalli
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Teste 1",
+            "Teste 2"});
             this.comboBox1.Location = new System.Drawing.Point(213, 336);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
@@ -370,19 +373,11 @@ namespace PaivaPrevitalli
             this.textBox5.Size = new System.Drawing.Size(360, 23);
             this.textBox5.TabIndex = 12;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(436, 148);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(67, 23);
-            this.dateTimePicker1.TabIndex = 11;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(306, 154);
+            this.label3.Location = new System.Drawing.Point(281, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 16);
             this.label3.TabIndex = 10;
@@ -491,6 +486,7 @@ namespace PaivaPrevitalli
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.textBox20);
             this.groupBox4.Location = new System.Drawing.Point(71, 32);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(459, 149);
@@ -513,7 +509,6 @@ namespace PaivaPrevitalli
             this.tabPage2.Controls.Add(this.textBox13);
             this.tabPage2.Controls.Add(this.label14);
             this.tabPage2.Controls.Add(this.textBox14);
-            this.tabPage2.Controls.Add(this.dateTimePicker2);
             this.tabPage2.Controls.Add(this.label15);
             this.tabPage2.Controls.Add(this.label16);
             this.tabPage2.Controls.Add(this.textBox15);
@@ -661,19 +656,11 @@ namespace PaivaPrevitalli
             this.textBox14.Size = new System.Drawing.Size(360, 23);
             this.textBox14.TabIndex = 36;
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(403, 194);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(67, 23);
-            this.dateTimePicker2.TabIndex = 35;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(273, 200);
+            this.label15.Location = new System.Drawing.Point(254, 200);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(120, 16);
             this.label15.TabIndex = 34;
@@ -732,6 +719,7 @@ namespace PaivaPrevitalli
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.textBox21);
             this.groupBox6.Controls.Add(this.label21);
             this.groupBox6.Controls.Add(this.textBox19);
             this.groupBox6.Controls.Add(this.textBox18);
@@ -894,6 +882,22 @@ namespace PaivaPrevitalli
             this.nascimento.Name = "nascimento";
             this.nascimento.Width = 90;
             // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(336, 119);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.PlaceholderText = "Ex: 00/00/0000";
+            this.textBox20.Size = new System.Drawing.Size(95, 23);
+            this.textBox20.TabIndex = 0;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(343, 159);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.PlaceholderText = "Ex: 00/00/0000";
+            this.textBox21.Size = new System.Drawing.Size(89, 23);
+            this.textBox21.TabIndex = 52;
+            // 
             // TelaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -912,6 +916,8 @@ namespace PaivaPrevitalli
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -943,7 +949,6 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox4;
@@ -977,7 +982,6 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox15;
@@ -1005,5 +1009,7 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.DataGridViewTextBoxColumn cel;
         private System.Windows.Forms.DataGridViewTextBoxColumn nascimento;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox21;
     }
 }
