@@ -38,6 +38,7 @@ namespace PaivaPrevitalli
             this.buttonCliente = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -109,7 +110,6 @@ namespace PaivaPrevitalli
             this.cel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -203,6 +203,12 @@ namespace PaivaPrevitalli
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.sairToolStripMenuItem.Text = "Sair";
             // 
             // groupBox1
             // 
@@ -437,6 +443,7 @@ namespace PaivaPrevitalli
             this.buttonCadCli.TabIndex = 4;
             this.buttonCadCli.Text = "Cadastrar";
             this.buttonCadCli.UseVisualStyleBackColor = false;
+            this.buttonCadCli.Click += new System.EventHandler(this.buttonCadCli_Click);
             // 
             // labelSenUsu
             // 
@@ -520,7 +527,7 @@ namespace PaivaPrevitalli
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(605, 379);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Pesquisar por Nome";
+            this.tabPage2.Text = "Pesquisar por Código";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // buttonPesNomCli
@@ -534,6 +541,7 @@ namespace PaivaPrevitalli
             this.buttonPesNomCli.TabIndex = 51;
             this.buttonPesNomCli.Text = "OK";
             this.buttonPesNomCli.UseVisualStyleBackColor = false;
+            this.buttonPesNomCli.Click += new System.EventHandler(this.buttonPesNomCli_Click);
             // 
             // textPesNomCli
             // 
@@ -553,6 +561,7 @@ namespace PaivaPrevitalli
             this.buttonExCli.TabIndex = 49;
             this.buttonExCli.Text = "Excluir";
             this.buttonExCli.UseVisualStyleBackColor = false;
+            this.buttonExCli.Click += new System.EventHandler(this.buttonExCli_Click);
             // 
             // buttonAltCli
             // 
@@ -565,6 +574,7 @@ namespace PaivaPrevitalli
             this.buttonAltCli.TabIndex = 48;
             this.buttonAltCli.Text = "Alterar";
             this.buttonAltCli.UseVisualStyleBackColor = false;
+            this.buttonAltCli.Click += new System.EventHandler(this.buttonAltCli_Click);
             // 
             // label10
             // 
@@ -699,9 +709,9 @@ namespace PaivaPrevitalli
             this.labelDigNomCli.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelDigNomCli.Location = new System.Drawing.Point(38, 12);
             this.labelDigNomCli.Name = "labelDigNomCli";
-            this.labelDigNomCli.Size = new System.Drawing.Size(199, 19);
+            this.labelDigNomCli.Size = new System.Drawing.Size(206, 19);
             this.labelDigNomCli.TabIndex = 27;
-            this.labelDigNomCli.Text = "Digite o Nome do Cliente";
+            this.labelDigNomCli.Text = "Digite o Código do Cliente";
             // 
             // textBox17
             // 
@@ -813,6 +823,7 @@ namespace PaivaPrevitalli
             this.buttonOkCodCli.TabIndex = 54;
             this.buttonOkCodCli.Text = "OK";
             this.buttonOkCodCli.UseVisualStyleBackColor = false;
+            this.buttonOkCodCli.Click += new System.EventHandler(this.buttonOkCodCli_Click);
             // 
             // textBoxPesCodCli
             // 
@@ -827,9 +838,9 @@ namespace PaivaPrevitalli
             this.labelPesCodCli.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelPesCodCli.Location = new System.Drawing.Point(101, 17);
             this.labelPesCodCli.Name = "labelPesCodCli";
-            this.labelPesCodCli.Size = new System.Drawing.Size(169, 19);
+            this.labelPesCodCli.Size = new System.Drawing.Size(162, 19);
             this.labelPesCodCli.TabIndex = 52;
-            this.labelPesCodCli.Text = "Pesquisar por Código";
+            this.labelPesCodCli.Text = "Pesquisar por Nome";
             // 
             // dataGridView1
             // 
@@ -882,12 +893,6 @@ namespace PaivaPrevitalli
             this.nascimento.HeaderText = "Nascimento";
             this.nascimento.Name = "nascimento";
             this.nascimento.Width = 90;
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sairToolStripMenuItem.Text = "Sair";
             // 
             // TelaCliente
             // 
