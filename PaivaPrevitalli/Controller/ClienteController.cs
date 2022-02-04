@@ -88,7 +88,7 @@ namespace PaivaPrevitalli.Controller
 
                 if (tabelaDados.Read())
                 {
-                    Cliente.NomeCliente = tabelaDados["Cliente"].ToString();
+                    Cliente.NomeCliente = tabelaDados["Nome"].ToString();
                     Cliente.EmailCliente = tabelaDados["Email"].ToString();
                     Cliente.FoneCliente = tabelaDados["Telefone"].ToString();
                     Cliente.CelCliente = tabelaDados["Cel"].ToString();
@@ -162,7 +162,7 @@ namespace PaivaPrevitalli.Controller
                 comandos.Parameters.AddWithValue("@bairro", Cliente.BairroCliente);
                 comandos.Parameters.AddWithValue("@cep", Cliente.CepCliente);
                 comandos.Parameters.AddWithValue("@numero", Cliente.NumCliente);
-                comandos.Parameters.AddWithValue("@cpmplemento", Cliente.ComplCliente);
+                comandos.Parameters.AddWithValue("@complemento", Cliente.ComplCliente);
                 comandos.Parameters.AddWithValue("@encontrou", Cliente.EncontrouCliente);
 
                 conexao.Open();

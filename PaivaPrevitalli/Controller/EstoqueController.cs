@@ -88,8 +88,7 @@ namespace PaivaPrevitalli.Controller
                     Estoque.CategoriaEst = tabelaDados["Categoria"].ToString();
                     Estoque.CorEst = tabelaDados["Cor"].ToString();
                     Estoque.QuantidadeEst = tabelaDados["Quantidade"].ToString();
-                    Estoque.DescricaoEst = tabelaDados["Descricao"].ToString();
-                    Estoque.ImgEst = tabelaDados["Img"].ToString();
+                    Estoque.DescricaoEst = tabelaDados["Descrição"].ToString();
                     Estoque.Retorno = "True";
 
                 }
@@ -113,7 +112,7 @@ namespace PaivaPrevitalli.Controller
             }
         }
 
-        public BindingSource visuNomeEstoque()
+        public static BindingSource visuNomeEstoque()
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
             SqlCommand comandos = new SqlCommand("pBuscaNomeEstoque", conexao);

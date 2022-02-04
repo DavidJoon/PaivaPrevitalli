@@ -80,8 +80,9 @@ namespace PaivaPrevitalli.Controller
 
                 if (tabelaDados.Read())
                 {
-                    Usuario.NomeUsuario = tabelaDados["Usuario"].ToString();
+                    Usuario.NomeUsuario = tabelaDados["Nome"].ToString();
                     Usuario.LoginUsuario = tabelaDados["Login"].ToString();
+                    Usuario.SenhaUsuario = tabelaDados["Senha"].ToString();
                     Usuario.Retorno = "True";
 
                 }
@@ -105,7 +106,7 @@ namespace PaivaPrevitalli.Controller
             }
         }
 
-        public BindingSource visuNomeUsuario()
+        public static BindingSource visuNomeUsuario()
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
             SqlCommand comandos = new SqlCommand("pBuscaNomeUsuario", conexao);
@@ -127,7 +128,7 @@ namespace PaivaPrevitalli.Controller
 
         }
 
-        public void alterarCliente()
+        public void alterarUsuario()
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
             SqlCommand comandos = new SqlCommand("pAlterarUsuario", conexao);
@@ -137,8 +138,8 @@ namespace PaivaPrevitalli.Controller
             {
                 comandos.Parameters.AddWithValue("@codigo", Usuario.Codigo);
                 comandos.Parameters.AddWithValue("@nome", Usuario.NomeUsuario);
-                comandos.Parameters.AddWithValue("@email", Usuario.LoginUsuario);
-                comandos.Parameters.AddWithValue("@email", Usuario.SenhaUsuario);
+                comandos.Parameters.AddWithValue("@login", Usuario.LoginUsuario);
+                comandos.Parameters.AddWithValue("@senha", Usuario.SenhaUsuario);
 
                 conexao.Open();
                 comandos.ExecuteNonQuery();

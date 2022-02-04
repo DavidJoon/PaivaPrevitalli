@@ -89,7 +89,7 @@ namespace PaivaPrevitalli.Controller
                     Fornecedor.CategoriaFor = tabelaDados["Categoria"].ToString();
                     Fornecedor.CidadeFor = tabelaDados["Cidade"].ToString();
                     Fornecedor.EstadoFor = tabelaDados["Estado"].ToString();
-                    Fornecedor.ObsFor = tabelaDados["Obs"].ToString();
+                    Fornecedor.ObsFor = tabelaDados["Observações"].ToString();
                     Fornecedor.Retorno = "True";
 
                 }
@@ -113,7 +113,7 @@ namespace PaivaPrevitalli.Controller
             }
         }
 
-        public BindingSource visuNomeFornecedor()
+        public static BindingSource visuNomeFornecedor()
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
             SqlCommand comandos = new SqlCommand("pBuscaNomeFornecedor", conexao);
@@ -149,7 +149,7 @@ namespace PaivaPrevitalli.Controller
                 comandos.Parameters.AddWithValue("@categoria", Fornecedor.CategoriaFor);
                 comandos.Parameters.AddWithValue("@cidade", Fornecedor.CidadeFor);
                 comandos.Parameters.AddWithValue("@estado", Fornecedor.EstadoFor);
-                comandos.Parameters.AddWithValue("@obs", Fornecedor.ObsFor);
+                comandos.Parameters.AddWithValue("@observacao", Fornecedor.ObsFor);
 
                 conexao.Open();
                 comandos.ExecuteNonQuery();
@@ -178,7 +178,7 @@ namespace PaivaPrevitalli.Controller
 
             try
             {
-                comandos.Parameters.AddWithValue("@codigo", Cliente.Codigo);
+                comandos.Parameters.AddWithValue("@codigo", Fornecedor.Codigo);
                 conexao.Open();
                 comandos.ExecuteNonQuery();
                 Fornecedor.Retorno = "True";

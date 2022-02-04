@@ -36,7 +36,7 @@ namespace PaivaPrevitalli
                 comando.Parameters.AddWithValue("@rua", textBox5.Text);
                 comando.Parameters.AddWithValue("@bairro", textBox7.Text);
                 comando.Parameters.AddWithValue("@cep", textBox6.Text);
-                comando.Parameters.AddWithValue("@numero", textBox9.Text);
+                comando.Parameters.AddWithValue("@numero", Convert.ToInt32(textBox9.Text));
                 comando.Parameters.AddWithValue("@complemento", textBox8.Text);
                 comando.Parameters.AddWithValue("@encontrou", comboBox1.Text);
 
@@ -95,7 +95,6 @@ namespace PaivaPrevitalli
                 textBox12.Clear();
                 textBox11.Clear();
                 textBox10.Clear();
-                textBox20.Clear();
                 textBox21.Clear();
                 comboBox1.Text = string.Empty;
 
@@ -111,7 +110,7 @@ namespace PaivaPrevitalli
                 textBox17.Text = Cliente.EmailCliente;
                 textBox16.Text = Cliente.FoneCliente;
                 textBox15.Text = Cliente.CelCliente;
-                textBox20.Text = Cliente.NascCliente;
+                textBox21.Text = Cliente.NascCliente;
                 textBox14.Text = Cliente.RuaCliente;
                 textBox13.Text = Cliente.BairroCliente;
                 textBox12.Text = Cliente.CepCliente;
@@ -145,7 +144,7 @@ namespace PaivaPrevitalli
             Cliente.CepCliente = "";
             Cliente.NumCliente = "";
             Cliente.ComplCliente = "";
-            textBox20.Clear();
+            textBox21.Clear();
             textBox19.Clear();
             textBox18.Clear();
             textBox17.Clear();
@@ -212,8 +211,9 @@ namespace PaivaPrevitalli
             dataGridView1.Columns[2].Visible = false;
             dataGridView1.Columns[3].Visible = false;
             dataGridView1.Columns[4].Visible = false;
-            dataGridView1.Columns[5].HeaderCell.Value = "Código";
-            
+            dataGridView1.Columns[5].Visible = false;
+            dataGridView1.Columns[6].HeaderCell.Value = "Código";
+
 
 
             if (dataGridView1.Rows.Count == 1)
