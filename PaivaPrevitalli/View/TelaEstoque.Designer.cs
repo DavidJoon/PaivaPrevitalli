@@ -636,6 +636,7 @@ namespace PaivaPrevitalli
             this.buttonFornecedores.TabIndex = 3;
             this.buttonFornecedores.Text = "FORNECEDORES";
             this.buttonFornecedores.UseVisualStyleBackColor = false;
+            this.buttonFornecedores.Click += new System.EventHandler(this.buttonFornecedores_Click_1);
             // 
             // buttonUsuario
             // 
@@ -649,6 +650,7 @@ namespace PaivaPrevitalli
             this.buttonUsuario.TabIndex = 0;
             this.buttonUsuario.Text = "USUÁRIO";
             this.buttonUsuario.UseVisualStyleBackColor = false;
+            this.buttonUsuario.Click += new System.EventHandler(this.buttonUsuario_Click);
             // 
             // buttonEstoque
             // 
@@ -662,6 +664,7 @@ namespace PaivaPrevitalli
             this.buttonEstoque.TabIndex = 2;
             this.buttonEstoque.Text = "ESTOQUE";
             this.buttonEstoque.UseVisualStyleBackColor = false;
+            this.buttonEstoque.Click += new System.EventHandler(this.buttonEstoque_Click_1);
             // 
             // buttonCliente
             // 
@@ -675,6 +678,7 @@ namespace PaivaPrevitalli
             this.buttonCliente.TabIndex = 1;
             this.buttonCliente.Text = "CLIENTE";
             this.buttonCliente.UseVisualStyleBackColor = false;
+            this.buttonCliente.Click += new System.EventHandler(this.buttonCliente_Click_1);
             // 
             // menuStrip1
             // 
@@ -697,7 +701,7 @@ namespace PaivaPrevitalli
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -715,6 +719,7 @@ namespace PaivaPrevitalli
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaEstoque";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Estoque";
             this.Load += new System.EventHandler(this.TelaEstoque_Load);
             this.groupBox1.ResumeLayout(false);

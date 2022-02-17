@@ -31,22 +31,42 @@ namespace PaivaPrevitalli
         {
             InitializeComponent();
         }
+        
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            button1.Enabled = false;
-            button3.Enabled = false;
-            buttonCliente.Enabled = false;
-            buttonEstoque.Enabled = false;
-            buttonFornecedores.Enabled = false;
+            
+            button1.Enabled = true;
+            button3.Enabled = true;
+            buttonCliente.Enabled = true;
+            buttonEstoque.Enabled = true;
+            buttonFornecedores.Enabled = true;
             buttonCliente.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonCliente.Width, buttonCliente.Height, 40, 40));
             buttonUsuario.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonUsuario.Width, buttonUsuario.Height, 40, 40));
             buttonFornecedores.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonFornecedores.Width, buttonFornecedores.Height, 40, 40));
             buttonEstoque.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonEstoque.Width, buttonEstoque.Height, 40, 40));
         }
 
+ 
+
         private void buttonLogarUsu_Click(object sender, EventArgs e)
         {
+            
+
+
+            if (Usuario.Retorno == "false"){ 
+                button1.Enabled = true;
+                button3.Enabled = true;
+                buttonCliente.Enabled = true;
+                buttonEstoque.Enabled = true;
+                buttonFornecedores.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("acesso negado");
+            }
+
 
         }
 
@@ -190,6 +210,34 @@ namespace PaivaPrevitalli
                 MessageBox.Show("Não existe este Nome", "Atenção");
             }
 
+        }
+
+        private void buttonCliente_Click(object sender, EventArgs e)
+        {
+            TelaCliente telacliente = new TelaCliente();
+            telacliente.Show();
+            Visible = false;
+        }
+
+        private void buttonEstoque_Click(object sender, EventArgs e)
+        {
+            TelaEstoque telaestoque = new TelaEstoque();
+            telaestoque.Show();
+            Visible = false;
+        }
+
+        private void buttonFornecedores_Click(object sender, EventArgs e)
+        {
+            TelaFornecedor telafornecedor = new TelaFornecedor();
+            telafornecedor.Show();
+            Visible = false;
+        }
+
+        private void buttonUsuario_Click(object sender, EventArgs e)
+        {
+            TelaLogin telalogin = new TelaLogin();
+            telalogin.Show();
+            Visible = false;
         }
     }
     }

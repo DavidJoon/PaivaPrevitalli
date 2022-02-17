@@ -222,5 +222,32 @@ namespace PaivaPrevitalli
             }
 
         }
+
+        private void buttonCliente_Click(object sender, EventArgs e)
+        {
+            TelaCliente telacliente = new TelaCliente();
+            telacliente.Show();
+            Visible = false;
+        }
+        private void buttonEstoque_Click_1(object sender, EventArgs e)
+        {
+            TelaEstoque telaestoque = new TelaEstoque();
+            telaestoque.Show();
+            Visible = false;
+        }
+
+        private void buttonFornecedores_Click_1(object sender, EventArgs e)
+        {
+            TelaFornecedor telafornecedor = new TelaFornecedor();
+            telafornecedor.Show();
+            Visible = false;
+        }
+
+        private void buttonUsuario_Click(object sender, EventArgs e)
+        {
+            TelaLogin telalogin = new TelaLogin();
+            telalogin.Show();
+            Visible = false;
+        }
     }
 }

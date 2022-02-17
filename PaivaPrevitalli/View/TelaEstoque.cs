@@ -10,6 +10,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
+using System.IO;
+using System.Drawing.Imaging;
+
 
 namespace PaivaPrevitalli
 {
@@ -216,6 +220,34 @@ namespace PaivaPrevitalli
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonCliente_Click_1(object sender, EventArgs e)
+        {
+            TelaCliente telacliente = new TelaCliente();
+            telacliente.Show();
+            Visible = false;
+        }
+
+        private void buttonEstoque_Click_1(object sender, EventArgs e)
+        {
+            TelaEstoque telaestoque = new TelaEstoque();
+            telaestoque.Show();
+            Visible = false;
+        }
+
+        private void buttonFornecedores_Click_1(object sender, EventArgs e)
+        {
+            TelaFornecedor telafornecedor = new TelaFornecedor();
+            telafornecedor.Show();
+            Visible = false;
+        }
+
+        private void buttonUsuario_Click(object sender, EventArgs e)
+        {
+            TelaLogin telalogin = new TelaLogin();
+            telalogin.Show();
+            Visible = false;
         }
     }
     }

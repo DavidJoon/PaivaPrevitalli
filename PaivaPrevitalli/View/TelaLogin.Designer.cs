@@ -115,6 +115,7 @@ namespace PaivaPrevitalli
             this.buttonFornecedores.TabIndex = 3;
             this.buttonFornecedores.Text = "FORNECEDORES";
             this.buttonFornecedores.UseVisualStyleBackColor = false;
+            this.buttonFornecedores.Click += new System.EventHandler(this.buttonFornecedores_Click);
             // 
             // buttonUsuario
             // 
@@ -128,6 +129,7 @@ namespace PaivaPrevitalli
             this.buttonUsuario.TabIndex = 0;
             this.buttonUsuario.Text = "USUÁRIO";
             this.buttonUsuario.UseVisualStyleBackColor = false;
+            this.buttonUsuario.Click += new System.EventHandler(this.buttonUsuario_Click);
             // 
             // buttonEstoque
             // 
@@ -141,6 +143,7 @@ namespace PaivaPrevitalli
             this.buttonEstoque.TabIndex = 2;
             this.buttonEstoque.Text = "ESTOQUE";
             this.buttonEstoque.UseVisualStyleBackColor = false;
+            this.buttonEstoque.Click += new System.EventHandler(this.buttonEstoque_Click);
             // 
             // buttonCliente
             // 
@@ -154,6 +157,7 @@ namespace PaivaPrevitalli
             this.buttonCliente.TabIndex = 1;
             this.buttonCliente.Text = "CLIENTE";
             this.buttonCliente.UseVisualStyleBackColor = false;
+            this.buttonCliente.Click += new System.EventHandler(this.buttonCliente_Click);
             // 
             // menuStrip1
             // 
@@ -608,6 +612,7 @@ namespace PaivaPrevitalli
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paiva Previtalli";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);

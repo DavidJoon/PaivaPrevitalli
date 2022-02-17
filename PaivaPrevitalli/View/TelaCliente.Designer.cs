@@ -67,6 +67,7 @@ namespace PaivaPrevitalli
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.buttonPesNomCli = new System.Windows.Forms.Button();
             this.textPesNomCli = new System.Windows.Forms.TextBox();
@@ -90,6 +91,7 @@ namespace PaivaPrevitalli
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -108,8 +110,6 @@ namespace PaivaPrevitalli
             this.cel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -147,6 +147,7 @@ namespace PaivaPrevitalli
             this.buttonFornecedores.TabIndex = 3;
             this.buttonFornecedores.Text = "FORNECEDORES";
             this.buttonFornecedores.UseVisualStyleBackColor = false;
+            this.buttonFornecedores.Click += new System.EventHandler(this.buttonFornecedores_Click_1);
             // 
             // buttonUsuario
             // 
@@ -160,6 +161,7 @@ namespace PaivaPrevitalli
             this.buttonUsuario.TabIndex = 0;
             this.buttonUsuario.Text = "USUÁRIO";
             this.buttonUsuario.UseVisualStyleBackColor = false;
+            this.buttonUsuario.Click += new System.EventHandler(this.buttonUsuario_Click);
             // 
             // buttonEstoque
             // 
@@ -173,6 +175,7 @@ namespace PaivaPrevitalli
             this.buttonEstoque.TabIndex = 2;
             this.buttonEstoque.Text = "ESTOQUE";
             this.buttonEstoque.UseVisualStyleBackColor = false;
+            this.buttonEstoque.Click += new System.EventHandler(this.buttonEstoque_Click_1);
             // 
             // buttonCliente
             // 
@@ -186,6 +189,7 @@ namespace PaivaPrevitalli
             this.buttonCliente.TabIndex = 1;
             this.buttonCliente.Text = "CLIENTE";
             this.buttonCliente.UseVisualStyleBackColor = false;
+            this.buttonCliente.Click += new System.EventHandler(this.buttonCliente_Click);
             // 
             // menuStrip1
             // 
@@ -276,7 +280,7 @@ namespace PaivaPrevitalli
             this.comboBox1.Location = new System.Drawing.Point(213, 336);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 25;
+            this.comboBox1.TabIndex = 11;
             // 
             // label9
             // 
@@ -303,7 +307,7 @@ namespace PaivaPrevitalli
             this.textBox8.Location = new System.Drawing.Point(306, 285);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(197, 23);
-            this.textBox8.TabIndex = 20;
+            this.textBox8.TabIndex = 10;
             // 
             // label8
             // 
@@ -320,7 +324,7 @@ namespace PaivaPrevitalli
             this.textBox9.Location = new System.Drawing.Point(143, 285);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(63, 23);
-            this.textBox9.TabIndex = 18;
+            this.textBox9.TabIndex = 9;
             // 
             // label5
             // 
@@ -337,7 +341,7 @@ namespace PaivaPrevitalli
             this.textBox6.Location = new System.Drawing.Point(374, 249);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(129, 23);
-            this.textBox6.TabIndex = 16;
+            this.textBox6.TabIndex = 8;
             // 
             // label6
             // 
@@ -354,7 +358,7 @@ namespace PaivaPrevitalli
             this.textBox7.Location = new System.Drawing.Point(143, 249);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(193, 23);
-            this.textBox7.TabIndex = 14;
+            this.textBox7.TabIndex = 7;
             // 
             // label4
             // 
@@ -371,7 +375,7 @@ namespace PaivaPrevitalli
             this.textBox5.Location = new System.Drawing.Point(143, 216);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(360, 23);
-            this.textBox5.TabIndex = 12;
+            this.textBox5.TabIndex = 6;
             // 
             // label3
             // 
@@ -398,7 +402,7 @@ namespace PaivaPrevitalli
             this.textBox4.Location = new System.Drawing.Point(374, 115);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(129, 23);
-            this.textBox4.TabIndex = 7;
+            this.textBox4.TabIndex = 4;
             // 
             // label1
             // 
@@ -415,7 +419,7 @@ namespace PaivaPrevitalli
             this.textBox3.Location = new System.Drawing.Point(143, 115);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(193, 23);
-            this.textBox3.TabIndex = 5;
+            this.textBox3.TabIndex = 3;
             // 
             // labelTitLogUsu
             // 
@@ -435,7 +439,7 @@ namespace PaivaPrevitalli
             this.buttonCadCli.Location = new System.Drawing.Point(431, 334);
             this.buttonCadCli.Name = "buttonCadCli";
             this.buttonCadCli.Size = new System.Drawing.Size(72, 27);
-            this.buttonCadCli.TabIndex = 4;
+            this.buttonCadCli.TabIndex = 12;
             this.buttonCadCli.Text = "Cadastrar";
             this.buttonCadCli.UseVisualStyleBackColor = false;
             this.buttonCadCli.Click += new System.EventHandler(this.buttonCadCli_Click);
@@ -465,14 +469,14 @@ namespace PaivaPrevitalli
             this.textBox2.Location = new System.Drawing.Point(143, 82);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(360, 23);
-            this.textBox2.TabIndex = 1;
+            this.textBox2.TabIndex = 2;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(143, 47);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(360, 23);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.TabIndex = 1;
             // 
             // groupBox3
             // 
@@ -492,6 +496,14 @@ namespace PaivaPrevitalli
             this.groupBox4.Size = new System.Drawing.Size(459, 149);
             this.groupBox4.TabIndex = 24;
             this.groupBox4.TabStop = false;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(336, 119);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.PlaceholderText = "Ex: 00/00/0000";
+            this.textBox20.Size = new System.Drawing.Size(95, 23);
+            this.textBox20.TabIndex = 5;
             // 
             // tabPage2
             // 
@@ -732,6 +744,14 @@ namespace PaivaPrevitalli
             this.groupBox6.TabIndex = 47;
             this.groupBox6.TabStop = false;
             // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(343, 159);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.PlaceholderText = "Ex: 00/00/0000";
+            this.textBox21.Size = new System.Drawing.Size(89, 23);
+            this.textBox21.TabIndex = 52;
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -882,22 +902,6 @@ namespace PaivaPrevitalli
             this.nascimento.Name = "nascimento";
             this.nascimento.Width = 90;
             // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(336, 119);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.PlaceholderText = "Ex: 00/00/0000";
-            this.textBox20.Size = new System.Drawing.Size(95, 23);
-            this.textBox20.TabIndex = 0;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(343, 159);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.PlaceholderText = "Ex: 00/00/0000";
-            this.textBox21.Size = new System.Drawing.Size(89, 23);
-            this.textBox21.TabIndex = 52;
-            // 
             // TelaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -908,6 +912,7 @@ namespace PaivaPrevitalli
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Cliente";
             this.groupBox2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
@@ -1009,7 +1014,7 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.DataGridViewTextBoxColumn cel;
         private System.Windows.Forms.DataGridViewTextBoxColumn nascimento;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox20;
     }
 }
