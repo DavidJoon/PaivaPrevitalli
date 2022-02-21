@@ -37,37 +37,44 @@ namespace PaivaPrevitalli
         private void Form1_Load(object sender, EventArgs e)
         {
             
-            button1.Enabled = true;
-            button3.Enabled = true;
-            buttonCliente.Enabled = true;
-            buttonEstoque.Enabled = true;
-            buttonFornecedores.Enabled = true;
+            button1.Enabled = false;
+            button3.Enabled = false;
+            buttonCliente.Enabled = false;
+            buttonEstoque.Enabled = false;
+            buttonFornecedores.Enabled = false;
             buttonCliente.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonCliente.Width, buttonCliente.Height, 40, 40));
             buttonUsuario.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonUsuario.Width, buttonUsuario.Height, 40, 40));
             buttonFornecedores.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonFornecedores.Width, buttonFornecedores.Height, 40, 40));
             buttonEstoque.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonEstoque.Width, buttonEstoque.Height, 40, 40));
         }
 
- 
+
 
         private void buttonLogarUsu_Click(object sender, EventArgs e)
         {
-            
-
-
-            if (Usuario.Retorno == "false"){ 
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pichau\source\repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
+            string query = "SELECT * FROM tbusuario WHERE loginUsuario = '"+textBox1.Text.Trim()+"' AND senhaUsuario = '"+textBox2.Text.Trim()+"' ";
+            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+            DataTable dtbl = new DataTable();
+            sda.Fill(dtbl);
+            if (dtbl.Rows.Count == 1)
+            {
                 button1.Enabled = true;
                 button3.Enabled = true;
                 buttonCliente.Enabled = true;
                 buttonEstoque.Enabled = true;
                 buttonFornecedores.Enabled = true;
+                textBox1.Clear();
+                textBox2.Clear();
+                MessageBox.Show("Bem Vindo");
             }
             else
             {
-                MessageBox.Show("acesso negado");
+                MessageBox.Show("Usuário ou senha incorretos");
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox1.Select();
             }
-
-
         }
 
         private void buttonCadUsu_Click(object sender, EventArgs e)
@@ -238,6 +245,18 @@ namespace PaivaPrevitalli
             TelaLogin telalogin = new TelaLogin();
             telalogin.Show();
             Visible = false;
+        }
+
+        private void terminarSessãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaLogin login = new TelaLogin();
+            this.Hide();
+            login.Show();
+            button1.Enabled = false;
+            button3.Enabled = false;
+            buttonCliente.Enabled = false;
+            buttonEstoque.Enabled = false;
+            buttonFornecedores.Enabled = false;
         }
     }
     }
