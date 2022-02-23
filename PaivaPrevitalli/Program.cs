@@ -1,3 +1,4 @@
+using PaivaPrevitalli.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace PaivaPrevitalli
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaLogin());
+            Application.Run(new TelaEstoque());
         }
     }
 }

@@ -36,26 +36,9 @@ namespace PaivaPrevitalli
             this.buttonEstoque = new System.Windows.Forms.Button();
             this.buttonCliente = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.terminarSessãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.labelTitLogUsu = new System.Windows.Forms.Label();
-            this.buttonLogarUsu = new System.Windows.Forms.Button();
-            this.labelSenUsu = new System.Windows.Forms.Label();
-            this.labelLogUsu = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.labelCadUsu = new System.Windows.Forms.Label();
-            this.buttonCadUsu = new System.Windows.Forms.Button();
-            this.labelSenCadUsu = new System.Windows.Forms.Label();
-            this.labelLogCadUsu = new System.Windows.Forms.Label();
-            this.textBoxSenCadUsu = new System.Windows.Forms.TextBox();
-            this.textBoxLogCadUsu = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -79,13 +62,11 @@ namespace PaivaPrevitalli
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelGerenciamento = new System.Windows.Forms.Label();
-            this.terminarSessãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -163,27 +144,20 @@ namespace PaivaPrevitalli
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arquivoToolStripMenuItem,
-            this.terminarSessãoToolStripMenuItem});
+            this.terminarSessãoToolStripMenuItem,
+            this.sairToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(834, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // arquivoToolStripMenuItem
+            // terminarSessãoToolStripMenuItem
             // 
-            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sairToolStripMenuItem});
-            this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.arquivoToolStripMenuItem.Text = "Arquivo";
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
-            this.sairToolStripMenuItem.Text = "Sair";
+            this.terminarSessãoToolStripMenuItem.Name = "terminarSessãoToolStripMenuItem";
+            this.terminarSessãoToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.terminarSessãoToolStripMenuItem.Text = "Terminar Sessão";
+            this.terminarSessãoToolStripMenuItem.Click += new System.EventHandler(this.terminarSessãoToolStripMenuItem_Click);
             // 
             // groupBox1
             // 
@@ -198,8 +172,6 @@ namespace PaivaPrevitalli
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(26, 83);
@@ -207,171 +179,6 @@ namespace PaivaPrevitalli
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(581, 334);
             this.tabControl1.TabIndex = 1;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.labelTitLogUsu);
-            this.tabPage1.Controls.Add(this.buttonLogarUsu);
-            this.tabPage1.Controls.Add(this.labelSenUsu);
-            this.tabPage1.Controls.Add(this.labelLogUsu);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(573, 306);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Logar";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // labelTitLogUsu
-            // 
-            this.labelTitLogUsu.AutoSize = true;
-            this.labelTitLogUsu.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelTitLogUsu.Location = new System.Drawing.Point(185, 48);
-            this.labelTitLogUsu.Name = "labelTitLogUsu";
-            this.labelTitLogUsu.Size = new System.Drawing.Size(228, 22);
-            this.labelTitLogUsu.TabIndex = 2;
-            this.labelTitLogUsu.Text = "Digite os dados para logar";
-            // 
-            // buttonLogarUsu
-            // 
-            this.buttonLogarUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogarUsu.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonLogarUsu.Location = new System.Drawing.Point(403, 195);
-            this.buttonLogarUsu.Name = "buttonLogarUsu";
-            this.buttonLogarUsu.Size = new System.Drawing.Size(83, 33);
-            this.buttonLogarUsu.TabIndex = 4;
-            this.buttonLogarUsu.Text = "Logar";
-            this.buttonLogarUsu.UseVisualStyleBackColor = true;
-            this.buttonLogarUsu.Click += new System.EventHandler(this.buttonLogarUsu_Click);
-            // 
-            // labelSenUsu
-            // 
-            this.labelSenUsu.AutoSize = true;
-            this.labelSenUsu.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelSenUsu.Location = new System.Drawing.Point(77, 155);
-            this.labelSenUsu.Name = "labelSenUsu";
-            this.labelSenUsu.Size = new System.Drawing.Size(43, 16);
-            this.labelSenUsu.TabIndex = 3;
-            this.labelSenUsu.Text = "Senha:";
-            // 
-            // labelLogUsu
-            // 
-            this.labelLogUsu.AutoSize = true;
-            this.labelLogUsu.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelLogUsu.Location = new System.Drawing.Point(80, 105);
-            this.labelLogUsu.Name = "labelLogUsu";
-            this.labelLogUsu.Size = new System.Drawing.Size(40, 16);
-            this.labelLogUsu.TabIndex = 2;
-            this.labelLogUsu.Text = "Login:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(126, 152);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(360, 23);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(126, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(360, 23);
-            this.textBox1.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.textBox7);
-            this.tabPage2.Controls.Add(this.labelCadUsu);
-            this.tabPage2.Controls.Add(this.buttonCadUsu);
-            this.tabPage2.Controls.Add(this.labelSenCadUsu);
-            this.tabPage2.Controls.Add(this.labelLogCadUsu);
-            this.tabPage2.Controls.Add(this.textBoxSenCadUsu);
-            this.tabPage2.Controls.Add(this.textBoxLogCadUsu);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(573, 306);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Cadastro";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(82, 78);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 16);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Nome:";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(131, 75);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(360, 23);
-            this.textBox7.TabIndex = 14;
-            // 
-            // labelCadUsu
-            // 
-            this.labelCadUsu.AutoSize = true;
-            this.labelCadUsu.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCadUsu.Location = new System.Drawing.Point(209, 38);
-            this.labelCadUsu.Name = "labelCadUsu";
-            this.labelCadUsu.Size = new System.Drawing.Size(183, 22);
-            this.labelCadUsu.TabIndex = 7;
-            this.labelCadUsu.Text = "Cadastro de Usuários";
-            // 
-            // buttonCadUsu
-            // 
-            this.buttonCadUsu.BackColor = System.Drawing.Color.White;
-            this.buttonCadUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCadUsu.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonCadUsu.Location = new System.Drawing.Point(408, 219);
-            this.buttonCadUsu.Name = "buttonCadUsu";
-            this.buttonCadUsu.Size = new System.Drawing.Size(83, 33);
-            this.buttonCadUsu.TabIndex = 10;
-            this.buttonCadUsu.Text = "Cadastrar";
-            this.buttonCadUsu.UseVisualStyleBackColor = false;
-            this.buttonCadUsu.Click += new System.EventHandler(this.buttonCadUsu_Click);
-            // 
-            // labelSenCadUsu
-            // 
-            this.labelSenCadUsu.AutoSize = true;
-            this.labelSenCadUsu.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelSenCadUsu.Location = new System.Drawing.Point(82, 172);
-            this.labelSenCadUsu.Name = "labelSenCadUsu";
-            this.labelSenCadUsu.Size = new System.Drawing.Size(43, 16);
-            this.labelSenCadUsu.TabIndex = 9;
-            this.labelSenCadUsu.Text = "Senha:";
-            // 
-            // labelLogCadUsu
-            // 
-            this.labelLogCadUsu.AutoSize = true;
-            this.labelLogCadUsu.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelLogCadUsu.Location = new System.Drawing.Point(85, 125);
-            this.labelLogCadUsu.Name = "labelLogCadUsu";
-            this.labelLogCadUsu.Size = new System.Drawing.Size(40, 16);
-            this.labelLogCadUsu.TabIndex = 8;
-            this.labelLogCadUsu.Text = "Login:";
-            // 
-            // textBoxSenCadUsu
-            // 
-            this.textBoxSenCadUsu.Location = new System.Drawing.Point(131, 169);
-            this.textBoxSenCadUsu.Name = "textBoxSenCadUsu";
-            this.textBoxSenCadUsu.Size = new System.Drawing.Size(360, 23);
-            this.textBoxSenCadUsu.TabIndex = 6;
-            // 
-            // textBoxLogCadUsu
-            // 
-            this.textBoxLogCadUsu.Location = new System.Drawing.Point(131, 122);
-            this.textBoxLogCadUsu.Name = "textBoxLogCadUsu";
-            this.textBoxLogCadUsu.Size = new System.Drawing.Size(360, 23);
-            this.textBoxLogCadUsu.TabIndex = 5;
             // 
             // tabPage3
             // 
@@ -603,12 +410,12 @@ namespace PaivaPrevitalli
             this.labelGerenciamento.TabIndex = 0;
             this.labelGerenciamento.Text = "SISTEMA DE GERENCIAMENTO";
             // 
-            // terminarSessãoToolStripMenuItem
+            // sairToolStripMenuItem1
             // 
-            this.terminarSessãoToolStripMenuItem.Name = "terminarSessãoToolStripMenuItem";
-            this.terminarSessãoToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
-            this.terminarSessãoToolStripMenuItem.Text = "Terminar Sessão";
-            this.terminarSessãoToolStripMenuItem.Click += new System.EventHandler(this.terminarSessãoToolStripMenuItem_Click);
+            this.sairToolStripMenuItem1.Name = "sairToolStripMenuItem1";
+            this.sairToolStripMenuItem1.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem1.Text = "Sair";
+            this.sairToolStripMenuItem1.Click += new System.EventHandler(this.sairToolStripMenuItem1_Click);
             // 
             // TelaLogin
             // 
@@ -622,7 +429,7 @@ namespace PaivaPrevitalli
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Paiva Previtalli";
+            this.Text = "Menu Usuário";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
@@ -630,10 +437,6 @@ namespace PaivaPrevitalli
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
@@ -652,26 +455,9 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.Button buttonEstoque;
         private System.Windows.Forms.Button buttonCliente;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labelGerenciamento;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label labelTitLogUsu;
-        private System.Windows.Forms.Button buttonLogarUsu;
-        private System.Windows.Forms.Label labelSenUsu;
-        private System.Windows.Forms.Label labelLogUsu;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label labelCadUsu;
-        private System.Windows.Forms.Button buttonCadUsu;
-        private System.Windows.Forms.Label labelSenCadUsu;
-        private System.Windows.Forms.Label labelLogCadUsu;
-        private System.Windows.Forms.TextBox textBoxSenCadUsu;
-        private System.Windows.Forms.TextBox textBoxLogCadUsu;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
@@ -691,11 +477,11 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.DataGridViewTextBoxColumn login;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn senha;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.ToolStripMenuItem terminarSessãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem1;
     }
 }
 

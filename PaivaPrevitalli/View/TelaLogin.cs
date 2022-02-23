@@ -1,5 +1,6 @@
 ﻿using PaivaPrevitalli.Controller;
 using PaivaPrevitalli.Model;
+using PaivaPrevitalli.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,88 +38,12 @@ namespace PaivaPrevitalli
         private void Form1_Load(object sender, EventArgs e)
         {
             
-            button1.Enabled = false;
-            button3.Enabled = false;
-            buttonCliente.Enabled = false;
-            buttonEstoque.Enabled = false;
-            buttonFornecedores.Enabled = false;
             buttonCliente.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonCliente.Width, buttonCliente.Height, 40, 40));
             buttonUsuario.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonUsuario.Width, buttonUsuario.Height, 40, 40));
             buttonFornecedores.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonFornecedores.Width, buttonFornecedores.Height, 40, 40));
             buttonEstoque.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonEstoque.Width, buttonEstoque.Height, 40, 40));
         }
 
-
-
-        private void buttonLogarUsu_Click(object sender, EventArgs e)
-        {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pichau\source\repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
-            string query = "SELECT * FROM tbusuario WHERE loginUsuario = '"+textBox1.Text.Trim()+"' AND senhaUsuario = '"+textBox2.Text.Trim()+"' ";
-            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
-            DataTable dtbl = new DataTable();
-            sda.Fill(dtbl);
-            if (dtbl.Rows.Count == 1)
-            {
-                button1.Enabled = true;
-                button3.Enabled = true;
-                buttonCliente.Enabled = true;
-                buttonEstoque.Enabled = true;
-                buttonFornecedores.Enabled = true;
-                textBox1.Clear();
-                textBox2.Clear();
-                MessageBox.Show("Bem Vindo");
-            }
-            else
-            {
-                MessageBox.Show("Usuário ou senha incorretos");
-                textBox1.Clear();
-                textBox2.Clear();
-                textBox1.Select();
-            }
-        }
-
-        private void buttonCadUsu_Click(object sender, EventArgs e)
-        {
-            SqlConnection conexao = new SqlConnection(Conexao.conectar());
-            SqlCommand comando = new SqlCommand("pInserirUsuario", conexao);
-            comando.CommandType = CommandType.StoredProcedure;
-
-            try
-            {
-                comando.Parameters.AddWithValue("@nome", textBox7.Text);
-                comando.Parameters.AddWithValue("@login", textBoxLogCadUsu.Text);
-                comando.Parameters.AddWithValue("@senha", textBoxSenCadUsu.Text);
-
-                SqlParameter codigo = comando.Parameters.Add("@codigo", SqlDbType.Int);
-                codigo.Direction = ParameterDirection.Output;
-
-                conexao.Open();
-                comando.ExecuteNonQuery();
-
-                var resposta = MessageBox.Show("Usuário cadastrado com sucesso., Deseja cadastrar outro usuário ou sair?", "Novo registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-                if (resposta == DialogResult.Yes)
-                {
-                    textBox7.Clear();
-                    textBoxLogCadUsu.Clear();
-                    textBoxSenCadUsu.Clear();
-                }
-                else
-                {
-                    this.Close();
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Usuário não cadastrado", "Atenção");
-            }
-            finally
-            {
-                if (conexao.State == ConnectionState.Open)
-                {
-                    conexao.Close();
-                }
-            }
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -249,14 +174,15 @@ namespace PaivaPrevitalli
 
         private void terminarSessãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaLogin login = new TelaLogin();
+            TelaMenu menu = new TelaMenu();
             this.Hide();
-            login.Show();
-            button1.Enabled = false;
-            button3.Enabled = false;
-            buttonCliente.Enabled = false;
-            buttonEstoque.Enabled = false;
-            buttonFornecedores.Enabled = false;
+            menu.Show();
+
+        }
+
+        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     }

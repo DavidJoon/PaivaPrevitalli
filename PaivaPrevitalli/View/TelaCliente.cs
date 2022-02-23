@@ -1,5 +1,6 @@
 ﻿using PaivaPrevitalli.Controller;
 using PaivaPrevitalli.Model;
+using PaivaPrevitalli.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -248,6 +249,18 @@ namespace PaivaPrevitalli
             TelaLogin telalogin = new TelaLogin();
             telalogin.Show();
             Visible = false;
+        }
+
+        private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaMenu menu = new TelaMenu();
+            this.Hide();
+            menu.Show();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
