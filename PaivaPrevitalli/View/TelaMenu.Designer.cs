@@ -29,6 +29,7 @@ namespace PaivaPrevitalli.View
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sairToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -277,8 +278,9 @@ namespace PaivaPrevitalli.View
             this.ClientSize = new System.Drawing.Size(662, 461);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "TelaMenu";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paiva Previtalli";
             this.menuStrip1.ResumeLayout(false);

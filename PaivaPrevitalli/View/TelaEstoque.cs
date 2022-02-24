@@ -27,14 +27,12 @@ namespace PaivaPrevitalli
         SqlCommand cmd;
         private void TelaEstoque_Load(object sender, EventArgs e)
         {
+            load_data();
             button8.Enabled = false;
             button7.Enabled = false;
             button10.Enabled = false;
         }
        
-
-    
-
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -91,7 +89,7 @@ namespace PaivaPrevitalli
 
         private void button8_Click(object sender, EventArgs e)
         {
-            cmd = new SqlConnection("Insert into tbest(nomeest,categoriaest,corest,quantidadeest,descricaoest,imgest)Values(@nomeest,@categoriaest,@corest,@quantidadeest,@descricaoest,@imgest)", conn);
+            cmd = new SqlCommand("Insert into tbest(nomeest,categoriaest,corest,quantidadeest,descricaoest,imgest)Values(@nomeest,@categoriaest,@corest,@quantidadeest,@descricaoest,@imgest)", conn);
             cmd.Parameters.AddWithValue("nomeest", textBoxPesCodCli.Text);
             cmd.Parameters.AddWithValue("categoriaest", textBox1.Text);
             cmd.Parameters.AddWithValue("corest", textBox3.Text);
@@ -104,6 +102,64 @@ namespace PaivaPrevitalli
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Inserido com sucesso!");
+            load_data();
+        }
+        private void load_data()
+        {
+            cmd = new SqlCommand("Select * from tbest order by id desc", conn);
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            dt.Clear();
+            da.Fill(dt);
+            dataGridView1.RowTemplate.Height = 75;
+            dataGridView1.DataSource = dt;
+            DataGridViewImageColumn pic1 = new DataGridViewImageColumn();
+            pic1 = (DataGridViewImageColumn)dataGridView1.Columns[2];
+            pic1.ImageLayout = DataGridViewImageCellLayout.Stretch;
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+            id1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            textBoxPesCodCli.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            MemoryStream ms = new MemoryStream((byte[])dataGridView1.CurrentRow.Cells[1].Value);
+            pictureBox3.Image = Image.FromStream(ms);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            cmd = new SqlCommand("Update tbest Set nomeest = @nomeest, categoriaest = @categoriaest, corest = @corest, quantidadeest = @quantidadeest, descricaoest = @descricaoest, imgest = @imgest Where idEst = @idEst", conn);
+            cmd.Parameters.AddWithValue("nomeest", textBoxPesCodCli.Text);
+            cmd.Parameters.AddWithValue("categoriaest", textBox1.Text);
+            cmd.Parameters.AddWithValue("corest", textBox3.Text);
+            cmd.Parameters.AddWithValue("quantidadeest", textBox2.Text);
+            cmd.Parameters.AddWithValue("descricaoest", textBox4.Text);
+            MemoryStream memstr = new MemoryStream();
+            pictureBox3.Image.Save(memstr, pictureBox3.Image.RawFormat);
+            cmd.Parameters.AddWithValue("imgest", memstr.ToArray());
+            cmd.Parameters.AddWithValue("idEst", id1.Text);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            load_data();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            cmd = new SqlCommand("Delete from tbest where idEst=@idEst", conn);
+            cmd.Parameters.AddWithValue("idEst", id1.Text);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            load_data();
+            pictureBox3.Image = null;
+            textBoxPesCodCli.Text = "";
+            textBox1.Text = "";
+            textBox3.Text = "";
+            textBox2.Text = "";
+            textBox4.Text = "";
+            id1.Text = "";
         }
     }
     }
