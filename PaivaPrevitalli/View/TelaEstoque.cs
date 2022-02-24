@@ -28,9 +28,9 @@ namespace PaivaPrevitalli
         private void TelaEstoque_Load(object sender, EventArgs e)
         {
             load_data();
-            button8.Enabled = false;
-            button7.Enabled = false;
-            button10.Enabled = false;
+            button8.Enabled = true;
+            button7.Enabled = true;
+            button10.Enabled = true;
         }
        
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -106,7 +106,7 @@ namespace PaivaPrevitalli
         }
         private void load_data()
         {
-            cmd = new SqlCommand("Select * from tbest order by id desc", conn);
+            cmd = new SqlCommand("Select * from tbest order by IdEst desc", conn);
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
             DataTable dt = new DataTable();
@@ -115,7 +115,7 @@ namespace PaivaPrevitalli
             dataGridView1.RowTemplate.Height = 75;
             dataGridView1.DataSource = dt;
             DataGridViewImageColumn pic1 = new DataGridViewImageColumn();
-            pic1 = (DataGridViewImageColumn)dataGridView1.Columns[2];
+            pic1 = (DataGridViewImageColumn)dataGridView1.Columns[6];
             pic1.ImageLayout = DataGridViewImageCellLayout.Stretch;
         }
 
@@ -123,13 +123,17 @@ namespace PaivaPrevitalli
         {
             id1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             textBoxPesCodCli.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            MemoryStream ms = new MemoryStream((byte[])dataGridView1.CurrentRow.Cells[1].Value);
+            textBox1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            textBox2.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            textBox4.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            MemoryStream ms = new MemoryStream((byte[])dataGridView1.CurrentRow.Cells[6].Value);
             pictureBox3.Image = Image.FromStream(ms);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("Update tbest Set nomeest = @nomeest, categoriaest = @categoriaest, corest = @corest, quantidadeest = @quantidadeest, descricaoest = @descricaoest, imgest = @imgest Where idEst = @idEst", conn);
+            cmd = new SqlCommand("Update tbest Set nomeest = @nomeest, categoriaest = @categoriaest, corest = @corest, quantidadeest = @quantidadeest, descricaoest = @descricaoest, imgest = @imgest Where IdEst = @IdEst", conn);
             cmd.Parameters.AddWithValue("nomeest", textBoxPesCodCli.Text);
             cmd.Parameters.AddWithValue("categoriaest", textBox1.Text);
             cmd.Parameters.AddWithValue("corest", textBox3.Text);
@@ -138,7 +142,7 @@ namespace PaivaPrevitalli
             MemoryStream memstr = new MemoryStream();
             pictureBox3.Image.Save(memstr, pictureBox3.Image.RawFormat);
             cmd.Parameters.AddWithValue("imgest", memstr.ToArray());
-            cmd.Parameters.AddWithValue("idEst", id1.Text);
+            cmd.Parameters.AddWithValue("IdEst", id1.Text);
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
@@ -147,8 +151,8 @@ namespace PaivaPrevitalli
 
         private void button10_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("Delete from tbest where idEst=@idEst", conn);
-            cmd.Parameters.AddWithValue("idEst", id1.Text);
+            cmd = new SqlCommand("Delete from tbest where IdEst=@IdEst", conn);
+            cmd.Parameters.AddWithValue("IdEst", id1.Text);
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
