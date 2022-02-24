@@ -20,7 +20,7 @@ namespace PaivaPrevitalli
         {
             InitializeComponent();
         }
-
+       
         private void buttonCadCli_Click(object sender, EventArgs e)
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
@@ -261,6 +261,12 @@ namespace PaivaPrevitalli
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TelaCliente_Load_1(object sender, EventArgs e)
+        {
+            buttonAltCli.Enabled = false;
+            buttonExCli.Enabled = false;
         }
     }
 }

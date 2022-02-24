@@ -915,6 +915,7 @@ namespace PaivaPrevitalli
             this.Name = "TelaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Cliente";
+            this.Load += new System.EventHandler(this.TelaCliente_Load_1);
             this.groupBox2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -18,7 +18,7 @@ namespace PaivaPrevitalli
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaEstoque());
+            Application.Run(new TelaMenu());
         }
     }
 }

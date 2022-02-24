@@ -29,8 +29,8 @@ namespace PaivaPrevitalli
         {
             load_data();
             button8.Enabled = true;
-            button7.Enabled = true;
-            button10.Enabled = true;
+            button7.Enabled = false;
+            button10.Enabled = false;
         }
        
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,6 +89,20 @@ namespace PaivaPrevitalli
 
         private void button8_Click(object sender, EventArgs e)
         {
+            if (textBoxPesCodCli.Text == "")
+            {
+                MessageBox.Show("Complete todos os campos", "Atenção");
+                textBoxPesCodCli.Focus();
+                textBox1.Clear();
+                textBox3.Clear();
+                textBox2.Clear();
+                textBox4.Clear();
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Inserido com sucesso!");
+            }
             cmd = new SqlCommand("Insert into tbest(nomeest,categoriaest,corest,quantidadeest,descricaoest,imgest)Values(@nomeest,@categoriaest,@corest,@quantidadeest,@descricaoest,@imgest)", conn);
             cmd.Parameters.AddWithValue("nomeest", textBoxPesCodCli.Text);
             cmd.Parameters.AddWithValue("categoriaest", textBox1.Text);
@@ -102,7 +116,8 @@ namespace PaivaPrevitalli
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Inserido com sucesso!");
-            load_data();
+           
+                load_data();
         }
         private void load_data()
         {
@@ -117,10 +132,13 @@ namespace PaivaPrevitalli
             DataGridViewImageColumn pic1 = new DataGridViewImageColumn();
             pic1 = (DataGridViewImageColumn)dataGridView1.Columns[6];
             pic1.ImageLayout = DataGridViewImageCellLayout.Stretch;
+
         }
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
+            button7.Enabled = true;
+            button10.Enabled = true;
             id1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             textBoxPesCodCli.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             textBox1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
