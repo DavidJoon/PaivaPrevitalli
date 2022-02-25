@@ -129,7 +129,7 @@ namespace PaivaPrevitalli
             this.textBox4.Location = new System.Drawing.Point(72, 133);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(325, 23);
-            this.textBox4.TabIndex = 71;
+            this.textBox4.TabIndex = 4;
             // 
             // label4
             // 
@@ -146,7 +146,7 @@ namespace PaivaPrevitalli
             this.textBox3.Location = new System.Drawing.Point(72, 92);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(93, 23);
-            this.textBox3.TabIndex = 69;
+            this.textBox3.TabIndex = 2;
             // 
             // label3
             // 
@@ -163,7 +163,7 @@ namespace PaivaPrevitalli
             this.textBox2.Location = new System.Drawing.Point(291, 92);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(106, 23);
-            this.textBox2.TabIndex = 67;
+            this.textBox2.TabIndex = 3;
             // 
             // label2
             // 
@@ -180,7 +180,7 @@ namespace PaivaPrevitalli
             this.textBox1.Location = new System.Drawing.Point(72, 51);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(213, 23);
-            this.textBox1.TabIndex = 65;
+            this.textBox1.TabIndex = 1;
             // 
             // label1
             // 
@@ -210,7 +210,7 @@ namespace PaivaPrevitalli
             this.button9.Location = new System.Drawing.Point(505, 145);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(83, 22);
-            this.button9.TabIndex = 62;
+            this.button9.TabIndex = 5;
             this.button9.Text = "Buscar";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
@@ -223,7 +223,7 @@ namespace PaivaPrevitalli
             this.button10.Location = new System.Drawing.Point(379, 326);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(83, 22);
-            this.button10.TabIndex = 61;
+            this.button10.TabIndex = 8;
             this.button10.Text = "Deletar";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -236,7 +236,7 @@ namespace PaivaPrevitalli
             this.button7.Location = new System.Drawing.Point(268, 326);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(83, 22);
-            this.button7.TabIndex = 38;
+            this.button7.TabIndex = 7;
             this.button7.Text = "Alterar";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -249,7 +249,7 @@ namespace PaivaPrevitalli
             this.button8.Location = new System.Drawing.Point(157, 326);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(83, 22);
-            this.button8.TabIndex = 37;
+            this.button8.TabIndex = 6;
             this.button8.Text = "Inserir";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -259,7 +259,7 @@ namespace PaivaPrevitalli
             this.textBoxPesCodCli.Location = new System.Drawing.Point(72, 9);
             this.textBoxPesCodCli.Name = "textBoxPesCodCli";
             this.textBoxPesCodCli.Size = new System.Drawing.Size(325, 23);
-            this.textBoxPesCodCli.TabIndex = 59;
+            this.textBoxPesCodCli.TabIndex = 0;
             // 
             // labelPesCodCli
             // 
@@ -390,6 +390,7 @@ namespace PaivaPrevitalli
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "TelaEstoque";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Estoque";

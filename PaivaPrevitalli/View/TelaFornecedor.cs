@@ -29,6 +29,43 @@ namespace PaivaPrevitalli
 
             try
             {
+                if (textBox2.Text == "")
+                {
+                    MessageBox.Show("Complete todos os campos", "Atenção");
+
+                    return;
+                }
+                else if (textBox9.Text == "")
+                {
+                    MessageBox.Show("Complete todos os campos", "Atenção");
+
+                    return;
+                }
+                else if (comboBox2.Text == "")
+                {
+                    MessageBox.Show("Complete todos os campos", "Atenção");
+
+                    return;
+                }
+                else if (comboBox5.Text == "")
+                {
+                    MessageBox.Show("Complete todos os campos", "Atenção");
+
+                    return;
+                }
+                else if (comboBox6.Text == "")
+                {
+                    MessageBox.Show("Complete todos os campos", "Atenção");
+
+                    return;
+                }
+                else if (textBox7.Text == "")
+                {
+                    MessageBox.Show("Complete todos os campos", "Atenção");
+
+                    return;
+                }
+
                 comando.Parameters.AddWithValue("@nome", textBox2.Text);
                 comando.Parameters.AddWithValue("@cnpj", textBox9.Text);
                 comando.Parameters.AddWithValue("@categoria", comboBox2.Text);

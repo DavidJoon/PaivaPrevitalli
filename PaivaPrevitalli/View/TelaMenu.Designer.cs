@@ -129,7 +129,7 @@ namespace PaivaPrevitalli.View
             this.buttonLogarUsu.Location = new System.Drawing.Point(403, 195);
             this.buttonLogarUsu.Name = "buttonLogarUsu";
             this.buttonLogarUsu.Size = new System.Drawing.Size(83, 33);
-            this.buttonLogarUsu.TabIndex = 4;
+            this.buttonLogarUsu.TabIndex = 2;
             this.buttonLogarUsu.Text = "Logar";
             this.buttonLogarUsu.UseVisualStyleBackColor = true;
             this.buttonLogarUsu.Click += new System.EventHandler(this.buttonLogarUsu_Click);
@@ -202,7 +202,7 @@ namespace PaivaPrevitalli.View
             this.textBox7.Location = new System.Drawing.Point(131, 75);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(360, 23);
-            this.textBox7.TabIndex = 14;
+            this.textBox7.TabIndex = 0;
             // 
             // labelCadUsu
             // 
@@ -222,7 +222,7 @@ namespace PaivaPrevitalli.View
             this.buttonCadUsu.Location = new System.Drawing.Point(408, 219);
             this.buttonCadUsu.Name = "buttonCadUsu";
             this.buttonCadUsu.Size = new System.Drawing.Size(83, 33);
-            this.buttonCadUsu.TabIndex = 10;
+            this.buttonCadUsu.TabIndex = 3;
             this.buttonCadUsu.Text = "Cadastrar";
             this.buttonCadUsu.UseVisualStyleBackColor = false;
             this.buttonCadUsu.Click += new System.EventHandler(this.buttonCadUsu_Click);
@@ -252,14 +252,14 @@ namespace PaivaPrevitalli.View
             this.textBoxSenCadUsu.Location = new System.Drawing.Point(131, 169);
             this.textBoxSenCadUsu.Name = "textBoxSenCadUsu";
             this.textBoxSenCadUsu.Size = new System.Drawing.Size(360, 23);
-            this.textBoxSenCadUsu.TabIndex = 6;
+            this.textBoxSenCadUsu.TabIndex = 2;
             // 
             // textBoxLogCadUsu
             // 
             this.textBoxLogCadUsu.Location = new System.Drawing.Point(131, 122);
             this.textBoxLogCadUsu.Name = "textBoxLogCadUsu";
             this.textBoxLogCadUsu.Size = new System.Drawing.Size(360, 23);
-            this.textBoxLogCadUsu.TabIndex = 5;
+            this.textBoxLogCadUsu.TabIndex = 1;
             // 
             // labelGerenciamento
             // 
@@ -279,7 +279,7 @@ namespace PaivaPrevitalli.View
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.MaximizeBox = false;
             this.Name = "TelaMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paiva Previtalli";

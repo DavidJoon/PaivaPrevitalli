@@ -266,7 +266,7 @@ namespace PaivaPrevitalli
             this.textBox7.Location = new System.Drawing.Point(46, 199);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(348, 22);
-            this.textBox7.TabIndex = 39;
+            this.textBox7.TabIndex = 5;
             // 
             // comboBox6
             // 
@@ -278,7 +278,7 @@ namespace PaivaPrevitalli
             this.comboBox6.Location = new System.Drawing.Point(398, 124);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(98, 24);
-            this.comboBox6.TabIndex = 38;
+            this.comboBox6.TabIndex = 4;
             // 
             // label14
             // 
@@ -300,7 +300,7 @@ namespace PaivaPrevitalli
             this.comboBox5.Location = new System.Drawing.Point(242, 124);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(150, 24);
-            this.comboBox5.TabIndex = 36;
+            this.comboBox5.TabIndex = 3;
             // 
             // label10
             // 
@@ -320,7 +320,7 @@ namespace PaivaPrevitalli
             this.button5.Location = new System.Drawing.Point(413, 199);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(83, 22);
-            this.button5.TabIndex = 34;
+            this.button5.TabIndex = 6;
             this.button5.Text = "Cadastrar";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -335,7 +335,7 @@ namespace PaivaPrevitalli
             this.comboBox2.Location = new System.Drawing.Point(47, 124);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(189, 24);
-            this.comboBox2.TabIndex = 34;
+            this.comboBox2.TabIndex = 2;
             // 
             // label7
             // 
@@ -362,7 +362,7 @@ namespace PaivaPrevitalli
             this.textBox9.Location = new System.Drawing.Point(398, 63);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(98, 22);
-            this.textBox9.TabIndex = 28;
+            this.textBox9.TabIndex = 1;
             // 
             // label8
             // 
@@ -379,7 +379,7 @@ namespace PaivaPrevitalli
             this.textBox2.Location = new System.Drawing.Point(44, 63);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(348, 22);
-            this.textBox2.TabIndex = 25;
+            this.textBox2.TabIndex = 0;
             // 
             // labelTitLogUsu
             // 
@@ -436,7 +436,7 @@ namespace PaivaPrevitalli
             this.textBox5.Location = new System.Drawing.Point(42, 49);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 42;
+            this.textBox5.TabIndex = 2;
             // 
             // button6
             // 
@@ -446,7 +446,7 @@ namespace PaivaPrevitalli
             this.button6.Location = new System.Drawing.Point(412, 253);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(83, 22);
-            this.button6.TabIndex = 36;
+            this.button6.TabIndex = 10;
             this.button6.Text = "Deletar";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -476,7 +476,7 @@ namespace PaivaPrevitalli
             this.textBox1.Location = new System.Drawing.Point(44, 243);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(348, 22);
-            this.textBox1.TabIndex = 39;
+            this.textBox1.TabIndex = 8;
             // 
             // button3
             // 
@@ -486,7 +486,7 @@ namespace PaivaPrevitalli
             this.button3.Location = new System.Drawing.Point(412, 220);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(83, 22);
-            this.button3.TabIndex = 35;
+            this.button3.TabIndex = 9;
             this.button3.Text = "Alterar";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -501,7 +501,7 @@ namespace PaivaPrevitalli
             this.comboBox1.Location = new System.Drawing.Point(396, 168);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(98, 24);
-            this.comboBox1.TabIndex = 38;
+            this.comboBox1.TabIndex = 7;
             // 
             // label2
             // 
@@ -523,7 +523,7 @@ namespace PaivaPrevitalli
             this.comboBox3.Location = new System.Drawing.Point(240, 168);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(150, 24);
-            this.comboBox3.TabIndex = 36;
+            this.comboBox3.TabIndex = 6;
             // 
             // label3
             // 
@@ -545,7 +545,7 @@ namespace PaivaPrevitalli
             this.comboBox4.Location = new System.Drawing.Point(42, 168);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(189, 24);
-            this.comboBox4.TabIndex = 34;
+            this.comboBox4.TabIndex = 5;
             // 
             // label4
             // 
@@ -572,7 +572,7 @@ namespace PaivaPrevitalli
             this.textBox3.Location = new System.Drawing.Point(396, 107);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(98, 22);
-            this.textBox3.TabIndex = 28;
+            this.textBox3.TabIndex = 4;
             // 
             // label6
             // 
@@ -589,7 +589,7 @@ namespace PaivaPrevitalli
             this.textBox4.Location = new System.Drawing.Point(42, 107);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(348, 22);
-            this.textBox4.TabIndex = 25;
+            this.textBox4.TabIndex = 3;
             // 
             // button2
             // 
@@ -599,7 +599,7 @@ namespace PaivaPrevitalli
             this.button2.Location = new System.Drawing.Point(361, 45);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(72, 22);
-            this.button2.TabIndex = 35;
+            this.button2.TabIndex = 1;
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -609,7 +609,7 @@ namespace PaivaPrevitalli
             this.textBox6.Location = new System.Drawing.Point(86, 45);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(252, 23);
-            this.textBox6.TabIndex = 35;
+            this.textBox6.TabIndex = 0;
             // 
             // label13
             // 
@@ -643,7 +643,7 @@ namespace PaivaPrevitalli
             this.buttonOkCodCli.Location = new System.Drawing.Point(485, 40);
             this.buttonOkCodCli.Name = "buttonOkCodCli";
             this.buttonOkCodCli.Size = new System.Drawing.Size(37, 23);
-            this.buttonOkCodCli.TabIndex = 57;
+            this.buttonOkCodCli.TabIndex = 1;
             this.buttonOkCodCli.Text = "OK";
             this.buttonOkCodCli.UseVisualStyleBackColor = false;
             this.buttonOkCodCli.Click += new System.EventHandler(this.buttonOkCodCli_Click);
@@ -653,7 +653,7 @@ namespace PaivaPrevitalli
             this.textBoxPesCodCli.Location = new System.Drawing.Point(266, 41);
             this.textBoxPesCodCli.Name = "textBoxPesCodCli";
             this.textBoxPesCodCli.Size = new System.Drawing.Size(213, 23);
-            this.textBoxPesCodCli.TabIndex = 56;
+            this.textBoxPesCodCli.TabIndex = 0;
             // 
             // labelPesCodCli
             // 
@@ -732,6 +732,7 @@ namespace PaivaPrevitalli
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "TelaFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Fornecedor";

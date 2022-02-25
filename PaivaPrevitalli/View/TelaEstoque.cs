@@ -23,7 +23,7 @@ namespace PaivaPrevitalli
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\rafael.onascimento5\Source\Repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pichau\source\repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
         SqlCommand cmd;
         private void TelaEstoque_Load(object sender, EventArgs e)
         {
@@ -92,17 +92,34 @@ namespace PaivaPrevitalli
             if (textBoxPesCodCli.Text == "")
             {
                 MessageBox.Show("Complete todos os campos", "Atenção");
-                textBoxPesCodCli.Focus();
-                textBox1.Clear();
-                textBox3.Clear();
-                textBox2.Clear();
-                textBox4.Clear();
+
                 return;
             }
-            else
+            else if (textBox1.Text == "")
             {
-                MessageBox.Show("Inserido com sucesso!");
+                MessageBox.Show("Complete todos os campos", "Atenção");
+
+                return;
             }
+            else if (textBox3.Text == "")
+            {
+                MessageBox.Show("Complete todos os campos", "Atenção");
+
+                return;
+            }
+            else if (textBox2.Text == "")
+            {
+                MessageBox.Show("Complete todos os campos", "Atenção");
+
+                return;
+            }
+            else if (textBox4.Text == "")
+            {
+                MessageBox.Show("Complete todos os campos", "Atenção");
+
+                return;
+            }
+
             cmd = new SqlCommand("Insert into tbest(nomeest,categoriaest,corest,quantidadeest,descricaoest,imgest)Values(@nomeest,@categoriaest,@corest,@quantidadeest,@descricaoest,@imgest)", conn);
             cmd.Parameters.AddWithValue("nomeest", textBoxPesCodCli.Text);
             cmd.Parameters.AddWithValue("categoriaest", textBox1.Text);

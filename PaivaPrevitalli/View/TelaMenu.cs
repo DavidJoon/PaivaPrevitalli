@@ -26,7 +26,19 @@ namespace PaivaPrevitalli.View
 
         private void buttonLogarUsu_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\rafael.onascimento5\Source\Repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf; Integrated Security = True");
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Digite login e senha", "Atenção");
+
+                return;
+            }
+            else if (textBox2.Text == "")
+            {
+                MessageBox.Show("Digite login e senha", "Atenção");
+
+                return;
+            }
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pichau\source\repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
             string query = "SELECT * FROM tbusuario WHERE loginUsuario = '" + textBox1.Text.Trim() + "' AND senhaUsuario = '" + textBox2.Text.Trim() + "' ";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
             DataTable dtbl = new DataTable();
@@ -54,6 +66,25 @@ namespace PaivaPrevitalli.View
 
             try
             {
+                if (textBox7.Text == "")
+                {
+                    MessageBox.Show("Complete todos os campos", "Atenção");
+
+                    return;
+                }
+                else if (textBoxLogCadUsu.Text == "")
+                {
+                    MessageBox.Show("Complete todos os campos", "Atenção");
+
+                    return;
+                }
+                else if (textBoxSenCadUsu.Text == "")
+                {
+                    MessageBox.Show("Complete todos os campos", "Atenção");
+
+                    return;
+                }
+
                 comando.Parameters.AddWithValue("@nome", textBox7.Text);
                 comando.Parameters.AddWithValue("@login", textBoxLogCadUsu.Text);
                 comando.Parameters.AddWithValue("@senha", textBoxSenCadUsu.Text);

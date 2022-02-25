@@ -37,7 +37,8 @@ namespace PaivaPrevitalli
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            button1.Enabled = false;
+            button3.Enabled = false;
             buttonCliente.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonCliente.Width, buttonCliente.Height, 40, 40));
             buttonUsuario.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonUsuario.Width, buttonUsuario.Height, 40, 40));
             buttonFornecedores.Region = Region.FromHrgn(CreateRoundRectRgn(1, 1, buttonFornecedores.Width, buttonFornecedores.Height, 40, 40));
