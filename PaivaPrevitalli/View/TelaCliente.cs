@@ -104,7 +104,7 @@ namespace PaivaPrevitalli
             textBox31.Clear();
             textBox30.Clear();
             textBox29.Clear();
-            textBox35.Clear();
+            textBox33.Clear();
             textBox28.Clear();
             textBox27.Clear();
             textBox26.Clear();
@@ -173,7 +173,7 @@ namespace PaivaPrevitalli
                 textBox31.Clear();
                 textBox30.Clear();
                 textBox29.Clear();
-                textBox35.Clear();
+                textBox33.Clear();
                 textBox28.Clear();
                 textBox27.Clear();
                 textBox26.Clear();
@@ -193,7 +193,7 @@ namespace PaivaPrevitalli
                 textBox31.Text = Cliente.EmailCliente;
                 textBox30.Text = Cliente.FoneCliente;
                 textBox29.Text = Cliente.CelCliente;
-                textBox35.Text = Cliente.NascCliente;
+                textBox33.Text = Cliente.NascCliente;
                 textBox28.Text = Cliente.RuaCliente;
                 textBox27.Text = Cliente.BairroCliente;
                 textBox26.Text = Cliente.CepCliente;
@@ -218,7 +218,7 @@ namespace PaivaPrevitalli
             Cliente.EmailCliente = textBox31.Text;
             Cliente.FoneCliente = textBox30.Text;
             Cliente.CelCliente = textBox29.Text;
-            Cliente.NascCliente = textBox35.Text;
+            Cliente.NascCliente = textBox33.Text;
             Cliente.RuaCliente = textBox28.Text;
             Cliente.BairroCliente = textBox27.Text;
             Cliente.CepCliente = textBox26.Text;

@@ -133,11 +133,18 @@ namespace PaivaPrevitalli
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Inserido com sucesso!");
-           
-                load_data();
+            textBoxPesCodCli.Clear();
+            textBox1.Clear();
+            textBox3.Clear();
+            textBox2.Clear();
+            textBox4.Clear();
+            pictureBox3.Image = null;
+            id1.Text = "";
+            load_data();
         }
         private void load_data()
         {
+ 
             cmd = new SqlCommand("Select * from tbest order by IdEst desc", conn);
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
@@ -146,6 +153,13 @@ namespace PaivaPrevitalli
             da.Fill(dt);
             dataGridView1.RowTemplate.Height = 75;
             dataGridView1.DataSource = dt;
+            dataGridView1.Columns[0].HeaderCell.Value = "Código";
+            dataGridView1.Columns[1].HeaderCell.Value = "Nome";
+            dataGridView1.Columns[2].HeaderCell.Value = "Categoria";
+            dataGridView1.Columns[3].HeaderCell.Value = "Cor";
+            dataGridView1.Columns[4].HeaderCell.Value = "Quantidade";
+            dataGridView1.Columns[5].HeaderCell.Value = "Descrição";
+            dataGridView1.Columns[6].HeaderCell.Value = "Imagem";
             DataGridViewImageColumn pic1 = new DataGridViewImageColumn();
             pic1 = (DataGridViewImageColumn)dataGridView1.Columns[6];
             pic1.ImageLayout = DataGridViewImageCellLayout.Stretch;
@@ -181,6 +195,13 @@ namespace PaivaPrevitalli
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
+            textBoxPesCodCli.Clear();
+            textBox1.Clear();
+            textBox3.Clear();
+            textBox2.Clear();
+            textBox4.Clear();
+            pictureBox3.Image = null;
+            id1.Text = "";
             load_data();
         }
 

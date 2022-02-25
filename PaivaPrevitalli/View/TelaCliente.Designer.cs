@@ -79,27 +79,27 @@ namespace PaivaPrevitalli
             this.label22 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox23 = new System.Windows.Forms.TextBox();
@@ -149,6 +149,7 @@ namespace PaivaPrevitalli
             this.groupBox4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox6.SuspendLayout();
@@ -550,26 +551,17 @@ namespace PaivaPrevitalli
             this.tabPage3.Controls.Add(this.label22);
             this.tabPage3.Controls.Add(this.textBox16);
             this.tabPage3.Controls.Add(this.label23);
-            this.tabPage3.Controls.Add(this.textBox24);
             this.tabPage3.Controls.Add(this.label24);
-            this.tabPage3.Controls.Add(this.textBox25);
             this.tabPage3.Controls.Add(this.label25);
-            this.tabPage3.Controls.Add(this.textBox26);
             this.tabPage3.Controls.Add(this.label26);
-            this.tabPage3.Controls.Add(this.textBox27);
             this.tabPage3.Controls.Add(this.label27);
-            this.tabPage3.Controls.Add(this.textBox28);
             this.tabPage3.Controls.Add(this.label28);
             this.tabPage3.Controls.Add(this.label29);
-            this.tabPage3.Controls.Add(this.textBox29);
             this.tabPage3.Controls.Add(this.label30);
-            this.tabPage3.Controls.Add(this.textBox30);
             this.tabPage3.Controls.Add(this.label31);
             this.tabPage3.Controls.Add(this.label32);
-            this.tabPage3.Controls.Add(this.textBox31);
-            this.tabPage3.Controls.Add(this.textBox32);
-            this.tabPage3.Controls.Add(this.groupBox7);
             this.tabPage3.Controls.Add(this.groupBox8);
+            this.tabPage3.Controls.Add(this.groupBox7);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -604,7 +596,7 @@ namespace PaivaPrevitalli
             this.button4.Location = new System.Drawing.Point(433, 350);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(72, 23);
-            this.button4.TabIndex = 34;
+            this.button4.TabIndex = 16;
             this.button4.Text = "Deletar";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -614,10 +606,10 @@ namespace PaivaPrevitalli
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(353, 350);
+            this.button3.Location = new System.Drawing.Point(355, 350);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(72, 23);
-            this.button3.TabIndex = 33;
+            this.button3.TabIndex = 15;
             this.button3.Text = "Alterar";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -640,7 +632,7 @@ namespace PaivaPrevitalli
             this.button2.Location = new System.Drawing.Point(409, 24);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(72, 23);
-            this.button2.TabIndex = 21;
+            this.button2.TabIndex = 1;
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -654,7 +646,7 @@ namespace PaivaPrevitalli
             this.comboBox2.Location = new System.Drawing.Point(215, 350);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 23);
-            this.comboBox2.TabIndex = 32;
+            this.comboBox2.TabIndex = 14;
             // 
             // label22
             // 
@@ -671,7 +663,7 @@ namespace PaivaPrevitalli
             this.textBox16.Location = new System.Drawing.Point(300, 24);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(94, 23);
-            this.textBox16.TabIndex = 20;
+            this.textBox16.TabIndex = 0;
             // 
             // label23
             // 
@@ -683,13 +675,6 @@ namespace PaivaPrevitalli
             this.label23.TabIndex = 42;
             this.label23.Text = "Complemento:";
             // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(308, 299);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(197, 23);
-            this.textBox24.TabIndex = 31;
-            // 
             // label24
             // 
             this.label24.AutoSize = true;
@@ -699,13 +684,6 @@ namespace PaivaPrevitalli
             this.label24.Size = new System.Drawing.Size(24, 16);
             this.label24.TabIndex = 40;
             this.label24.Text = "N°:";
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(145, 299);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(63, 23);
-            this.textBox25.TabIndex = 30;
             // 
             // label25
             // 
@@ -717,13 +695,6 @@ namespace PaivaPrevitalli
             this.label25.TabIndex = 39;
             this.label25.Text = "CEP:";
             // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(376, 263);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(129, 23);
-            this.textBox26.TabIndex = 29;
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -734,13 +705,6 @@ namespace PaivaPrevitalli
             this.label26.TabIndex = 38;
             this.label26.Text = "Bairro:";
             // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(145, 263);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(193, 23);
-            this.textBox27.TabIndex = 28;
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -750,13 +714,6 @@ namespace PaivaPrevitalli
             this.label27.Size = new System.Drawing.Size(31, 16);
             this.label27.TabIndex = 37;
             this.label27.Text = "Rua:";
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(145, 230);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(360, 23);
-            this.textBox28.TabIndex = 27;
             // 
             // label28
             // 
@@ -778,13 +735,6 @@ namespace PaivaPrevitalli
             this.label29.TabIndex = 35;
             this.label29.Text = "Cel:";
             // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(376, 129);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(129, 23);
-            this.textBox29.TabIndex = 25;
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
@@ -794,13 +744,6 @@ namespace PaivaPrevitalli
             this.label30.Size = new System.Drawing.Size(56, 16);
             this.label30.TabIndex = 34;
             this.label30.Text = "Telefone:";
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(145, 129);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(193, 23);
-            this.textBox30.TabIndex = 24;
             // 
             // label31
             // 
@@ -822,46 +765,104 @@ namespace PaivaPrevitalli
             this.label32.TabIndex = 32;
             this.label32.Text = "Nome:";
             // 
-            // textBox31
+            // groupBox8
             // 
-            this.textBox31.Location = new System.Drawing.Point(145, 96);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(360, 23);
-            this.textBox31.TabIndex = 23;
+            this.groupBox8.Controls.Add(this.textBox33);
+            this.groupBox8.Controls.Add(this.textBox32);
+            this.groupBox8.Controls.Add(this.textBox31);
+            this.groupBox8.Controls.Add(this.textBox30);
+            this.groupBox8.Controls.Add(this.textBox29);
+            this.groupBox8.Location = new System.Drawing.Point(73, 47);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(459, 149);
+            this.groupBox8.TabIndex = 2;
+            this.groupBox8.TabStop = false;
+            // 
+            // textBox33
+            // 
+            this.textBox33.Location = new System.Drawing.Point(336, 118);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.PlaceholderText = "Ex: 00/00/0000";
+            this.textBox33.Size = new System.Drawing.Size(96, 23);
+            this.textBox33.TabIndex = 7;
             // 
             // textBox32
             // 
-            this.textBox32.Location = new System.Drawing.Point(145, 61);
+            this.textBox32.Location = new System.Drawing.Point(72, 14);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(360, 23);
-            this.textBox32.TabIndex = 22;
+            this.textBox32.TabIndex = 3;
+            // 
+            // textBox31
+            // 
+            this.textBox31.Location = new System.Drawing.Point(72, 49);
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(360, 23);
+            this.textBox31.TabIndex = 4;
+            // 
+            // textBox30
+            // 
+            this.textBox30.Location = new System.Drawing.Point(72, 82);
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(193, 23);
+            this.textBox30.TabIndex = 5;
+            // 
+            // textBox29
+            // 
+            this.textBox29.Location = new System.Drawing.Point(303, 82);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(129, 23);
+            this.textBox29.TabIndex = 6;
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.textBox28);
+            this.groupBox7.Controls.Add(this.textBox27);
+            this.groupBox7.Controls.Add(this.textBox26);
+            this.groupBox7.Controls.Add(this.textBox25);
+            this.groupBox7.Controls.Add(this.textBox24);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox7.Location = new System.Drawing.Point(73, 201);
+            this.groupBox7.Location = new System.Drawing.Point(73, 202);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(459, 141);
-            this.groupBox7.TabIndex = 45;
+            this.groupBox7.TabIndex = 8;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Endereço";
             // 
-            // groupBox8
+            // textBox28
             // 
-            this.groupBox8.Controls.Add(this.textBox35);
-            this.groupBox8.Location = new System.Drawing.Point(73, 46);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(459, 149);
-            this.groupBox8.TabIndex = 48;
-            this.groupBox8.TabStop = false;
+            this.textBox28.Location = new System.Drawing.Point(72, 28);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(360, 22);
+            this.textBox28.TabIndex = 9;
             // 
-            // textBox35
+            // textBox27
             // 
-            this.textBox35.Location = new System.Drawing.Point(336, 119);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.PlaceholderText = "Ex: 00/00/0000";
-            this.textBox35.Size = new System.Drawing.Size(95, 23);
-            this.textBox35.TabIndex = 26;
+            this.textBox27.Location = new System.Drawing.Point(72, 61);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(193, 22);
+            this.textBox27.TabIndex = 10;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(303, 61);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(129, 22);
+            this.textBox26.TabIndex = 11;
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(72, 97);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(63, 22);
+            this.textBox25.TabIndex = 12;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(235, 97);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(197, 22);
+            this.textBox24.TabIndex = 13;
             // 
             // tabPage2
             // 
@@ -1254,6 +1255,8 @@ namespace PaivaPrevitalli
             this.tabPage3.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -1375,6 +1378,6 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox textBox33;
     }
 }
