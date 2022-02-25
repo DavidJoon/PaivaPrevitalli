@@ -58,10 +58,6 @@ namespace PaivaPrevitalli
             this.label7 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.login = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelGerenciamento = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -374,38 +370,11 @@ namespace PaivaPrevitalli
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codigo,
-            this.login,
-            this.nome,
-            this.senha});
             this.dataGridView1.Location = new System.Drawing.Point(32, 109);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(515, 130);
             this.dataGridView1.TabIndex = 22;
-            // 
-            // codigo
-            // 
-            this.codigo.HeaderText = "Código";
-            this.codigo.Name = "codigo";
-            // 
-            // login
-            // 
-            this.login.HeaderText = "Login";
-            this.login.Name = "login";
-            this.login.Width = 150;
-            // 
-            // nome
-            // 
-            this.nome.HeaderText = "Nome";
-            this.nome.Name = "nome";
-            this.nome.Width = 150;
-            // 
-            // senha
-            // 
-            this.senha.HeaderText = "Senha";
-            this.senha.Name = "senha";
             // 
             // labelGerenciamento
             // 
@@ -474,10 +443,6 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn login;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn senha;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox8;

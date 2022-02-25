@@ -130,14 +130,15 @@ namespace PaivaPrevitalli
             UsuarioController usuario = new();
             dataGridView1.DataSource = UsuarioController.visuNomeUsuario();
 
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[1].Visible = false;
-            dataGridView1.Columns[2].Visible = false;
-            dataGridView1.Columns[3].Visible = false;
-            dataGridView1.Columns[4].HeaderCell.Value = "Código";
+            dataGridView1.Columns[0].Width = 80;
+            dataGridView1.Columns[1].Width = 200;
+            dataGridView1.Columns[2].Width = 200;
+            dataGridView1.Columns[0].HeaderCell.Value = "Código";
+            dataGridView1.Columns[1].HeaderCell.Value = "Nome";
+            dataGridView1.Columns[2].HeaderCell.Value = "Login";
 
 
-
+            textBox8.Clear();
             if (dataGridView1.Rows.Count == 1)
             {
                 MessageBox.Show("Não existe este Nome", "Atenção");

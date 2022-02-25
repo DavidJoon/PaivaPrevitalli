@@ -262,6 +262,7 @@ namespace PaivaPrevitalli
             dataGridView2.Columns[4].Visible = false;
             dataGridView2.Columns[5].Visible = false;
             dataGridView2.Columns[6].HeaderCell.Value = "Código";
+            textBox23.Clear();
 
 
 
