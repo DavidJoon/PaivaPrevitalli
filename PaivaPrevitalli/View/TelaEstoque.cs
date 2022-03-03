@@ -228,5 +228,17 @@ namespace PaivaPrevitalli
             textBox4.Text = "";
             id1.Text = "";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pictureBox3.Image = null;
+            textBoxPesCodCli.Clear();
+            textBox1.Clear();
+            textBox3.Clear();
+            textBox2.Clear();
+            textBox4.Clear();
+            id1.Text = "";
+        }
+
     }
     }

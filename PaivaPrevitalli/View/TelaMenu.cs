@@ -95,7 +95,7 @@ namespace PaivaPrevitalli.View
                 conexao.Open();
                 comando.ExecuteNonQuery();
 
-                var resposta = MessageBox.Show("Usuário cadastrado com sucesso., Deseja cadastrar outro usuário ou sair?", "Novo registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                var resposta = MessageBox.Show("Usuário cadastrado com sucesso., Deseja cadastrar outro usuário?", "Novo registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (resposta == DialogResult.Yes)
                 {
                     textBox7.Clear();
@@ -104,7 +104,9 @@ namespace PaivaPrevitalli.View
                 }
                 else
                 {
-                    this.Close();
+                    textBox7.Clear();
+                    textBoxLogCadUsu.Clear();
+                    textBoxSenCadUsu.Clear();
                 }
             }
             catch

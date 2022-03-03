@@ -47,7 +47,7 @@ namespace PaivaPrevitalli
                 conexao.Open();
                 comando.ExecuteNonQuery();
 
-                var resposta = MessageBox.Show("Cliente cadastrado com sucesso., Deseja cadastrar outro cliente ou sair?", "Novo registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                var resposta = MessageBox.Show("Cliente cadastrado com sucesso., Deseja cadastrar outro cliente?", "Novo registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (resposta == DialogResult.Yes)
                 {
                     textBox1.Clear();
@@ -64,7 +64,17 @@ namespace PaivaPrevitalli
                 }
                 else
                 {
-                    this.Close();
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox3.Clear();
+                    textBox4.Clear();
+                    textBox20.Clear();
+                    textBox5.Clear();
+                    textBox7.Clear();
+                    textBox6.Clear();
+                    textBox9.Clear();
+                    textBox8.Clear();
+                    comboBox1.Text = string.Empty;
                 }
             }
             catch

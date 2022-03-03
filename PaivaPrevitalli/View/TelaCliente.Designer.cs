@@ -470,9 +470,9 @@ namespace PaivaPrevitalli
             this.buttonCadCli.BackColor = System.Drawing.Color.Aquamarine;
             this.buttonCadCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCadCli.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonCadCli.Location = new System.Drawing.Point(431, 334);
+            this.buttonCadCli.Location = new System.Drawing.Point(431, 336);
             this.buttonCadCli.Name = "buttonCadCli";
-            this.buttonCadCli.Size = new System.Drawing.Size(72, 27);
+            this.buttonCadCli.Size = new System.Drawing.Size(72, 23);
             this.buttonCadCli.TabIndex = 31;
             this.buttonCadCli.Text = "Cadastrar";
             this.buttonCadCli.UseVisualStyleBackColor = false;
@@ -567,7 +567,7 @@ namespace PaivaPrevitalli
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(605, 379);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Pesquisar Tudo";
+            this.tabPage3.Text = "Pesquisar por Código";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // label34
@@ -576,9 +576,9 @@ namespace PaivaPrevitalli
             this.label34.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label34.Location = new System.Drawing.Point(16, 61);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(48, 16);
+            this.label34.Size = new System.Drawing.Size(45, 16);
             this.label34.TabIndex = 60;
-            this.label34.Text = "Código:";
+            this.label34.Text = "Código";
             // 
             // textBox34
             // 
@@ -590,7 +590,7 @@ namespace PaivaPrevitalli
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackColor = System.Drawing.Color.LightCoral;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.Location = new System.Drawing.Point(433, 350);
@@ -603,7 +603,7 @@ namespace PaivaPrevitalli
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackColor = System.Drawing.Color.Aqua;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.Location = new System.Drawing.Point(355, 350);
@@ -620,16 +620,16 @@ namespace PaivaPrevitalli
             this.label33.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label33.Location = new System.Drawing.Point(73, 24);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(225, 19);
+            this.label33.Size = new System.Drawing.Size(229, 19);
             this.label33.TabIndex = 57;
-            this.label33.Text = "Pesquisar Cliente Por Código";
+            this.label33.Text = "Pesquisar Cliente Por Código:";
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackColor = System.Drawing.Color.Bisque;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(409, 24);
+            this.button2.Location = new System.Drawing.Point(417, 24);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(72, 23);
             this.button2.TabIndex = 1;
@@ -660,7 +660,7 @@ namespace PaivaPrevitalli
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(300, 24);
+            this.textBox16.Location = new System.Drawing.Point(308, 24);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(94, 23);
             this.textBox16.TabIndex = 0;
@@ -875,25 +875,25 @@ namespace PaivaPrevitalli
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(605, 379);
             this.tabPage2.TabIndex = 3;
-            this.tabPage2.Text = "Pesquisar Tudo";
+            this.tabPage2.Text = "Pesquisar por Nome";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button1.BackColor = System.Drawing.Color.Yellow;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(498, 12);
+            this.button1.Location = new System.Drawing.Point(475, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 23);
+            this.button1.Size = new System.Drawing.Size(72, 23);
             this.button1.TabIndex = 55;
-            this.button1.Text = "OK";
+            this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(279, 13);
+            this.textBox23.Location = new System.Drawing.Point(253, 12);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(213, 23);
             this.textBox23.TabIndex = 54;
@@ -902,11 +902,11 @@ namespace PaivaPrevitalli
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(104, 13);
+            this.label18.Location = new System.Drawing.Point(81, 13);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(162, 19);
+            this.label18.Size = new System.Drawing.Size(166, 19);
             this.label18.TabIndex = 56;
-            this.label18.Text = "Pesquisar por Nome";
+            this.label18.Text = "Pesquisar por Nome:";
             // 
             // dataGridView2
             // 

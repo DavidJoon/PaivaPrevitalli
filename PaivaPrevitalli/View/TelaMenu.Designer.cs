@@ -124,6 +124,7 @@ namespace PaivaPrevitalli.View
             // 
             // buttonLogarUsu
             // 
+            this.buttonLogarUsu.BackColor = System.Drawing.Color.Violet;
             this.buttonLogarUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogarUsu.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonLogarUsu.Location = new System.Drawing.Point(403, 195);
@@ -131,7 +132,7 @@ namespace PaivaPrevitalli.View
             this.buttonLogarUsu.Size = new System.Drawing.Size(83, 33);
             this.buttonLogarUsu.TabIndex = 2;
             this.buttonLogarUsu.Text = "Logar";
-            this.buttonLogarUsu.UseVisualStyleBackColor = true;
+            this.buttonLogarUsu.UseVisualStyleBackColor = false;
             this.buttonLogarUsu.Click += new System.EventHandler(this.buttonLogarUsu_Click);
             // 
             // labelSenUsu
@@ -156,15 +157,15 @@ namespace PaivaPrevitalli.View
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 152);
+            this.textBox2.Location = new System.Drawing.Point(126, 155);
             this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(360, 23);
             this.textBox2.TabIndex = 1;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 102);
+            this.textBox1.Location = new System.Drawing.Point(126, 105);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(360, 23);
             this.textBox1.TabIndex = 0;
@@ -216,12 +217,12 @@ namespace PaivaPrevitalli.View
             // 
             // buttonCadUsu
             // 
-            this.buttonCadUsu.BackColor = System.Drawing.Color.White;
+            this.buttonCadUsu.BackColor = System.Drawing.Color.Aquamarine;
             this.buttonCadUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCadUsu.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonCadUsu.Location = new System.Drawing.Point(408, 219);
+            this.buttonCadUsu.Location = new System.Drawing.Point(419, 213);
             this.buttonCadUsu.Name = "buttonCadUsu";
-            this.buttonCadUsu.Size = new System.Drawing.Size(83, 33);
+            this.buttonCadUsu.Size = new System.Drawing.Size(72, 23);
             this.buttonCadUsu.TabIndex = 3;
             this.buttonCadUsu.Text = "Cadastrar";
             this.buttonCadUsu.UseVisualStyleBackColor = false;
@@ -253,6 +254,7 @@ namespace PaivaPrevitalli.View
             this.textBoxSenCadUsu.Name = "textBoxSenCadUsu";
             this.textBoxSenCadUsu.Size = new System.Drawing.Size(360, 23);
             this.textBoxSenCadUsu.TabIndex = 2;
+            this.textBoxSenCadUsu.UseSystemPasswordChar = true;
             // 
             // textBoxLogCadUsu
             // 

@@ -207,12 +207,12 @@ namespace PaivaPrevitalli
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackColor = System.Drawing.Color.LightCoral;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(396, 267);
+            this.button3.Location = new System.Drawing.Point(394, 267);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 23);
+            this.button3.Size = new System.Drawing.Size(72, 23);
             this.button3.TabIndex = 6;
             this.button3.Text = "Deletar";
             this.button3.UseVisualStyleBackColor = false;
@@ -220,12 +220,12 @@ namespace PaivaPrevitalli
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackColor = System.Drawing.Color.Aqua;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(305, 267);
+            this.button1.Location = new System.Drawing.Point(303, 267);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 23);
+            this.button1.Size = new System.Drawing.Size(72, 23);
             this.button1.TabIndex = 5;
             this.button1.Text = "Alterar";
             this.button1.UseVisualStyleBackColor = false;
@@ -233,12 +233,12 @@ namespace PaivaPrevitalli
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackColor = System.Drawing.Color.Bisque;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(214, 83);
+            this.button2.Location = new System.Drawing.Point(210, 83);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 23);
+            this.button2.Size = new System.Drawing.Size(72, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = false;
@@ -275,15 +275,15 @@ namespace PaivaPrevitalli
             // 
             this.textBox5.Location = new System.Drawing.Point(106, 223);
             this.textBox5.Name = "textBox5";
-            this.textBox5.PasswordChar = '*';
             this.textBox5.Size = new System.Drawing.Size(360, 23);
             this.textBox5.TabIndex = 4;
+            this.textBox5.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(196, 29);
+            this.label1.Location = new System.Drawing.Point(157, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(254, 22);
             this.label1.TabIndex = 12;
@@ -334,17 +334,17 @@ namespace PaivaPrevitalli
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(573, 306);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Pesquisar Tudo";
+            this.tabPage4.Text = "Pesquisar por Nome";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackColor = System.Drawing.Color.Yellow;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(371, 47);
+            this.button4.Location = new System.Drawing.Point(390, 50);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(70, 23);
+            this.button4.Size = new System.Drawing.Size(72, 23);
             this.button4.TabIndex = 1;
             this.button4.Text = "Buscar";
             this.button4.UseVisualStyleBackColor = false;
@@ -353,16 +353,16 @@ namespace PaivaPrevitalli
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(32, 50);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 16);
+            this.label7.Size = new System.Drawing.Size(163, 19);
             this.label7.TabIndex = 24;
             this.label7.Text = "Pesquisar por nome:";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(168, 47);
+            this.textBox8.Location = new System.Drawing.Point(201, 50);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(183, 23);
             this.textBox8.TabIndex = 0;

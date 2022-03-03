@@ -79,7 +79,7 @@ namespace PaivaPrevitalli
                 conexao.Open();
                 comando.ExecuteNonQuery();
 
-                var resposta = MessageBox.Show("Fornecedor cadastrado com sucesso., Deseja cadastrar outro fornecedor ou sair?", "Novo registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                var resposta = MessageBox.Show("Fornecedor cadastrado com sucesso., Deseja cadastrar outro fornecedor?", "Novo registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (resposta == DialogResult.Yes)
                 {
                     textBox2.Clear();
@@ -91,7 +91,12 @@ namespace PaivaPrevitalli
                 }
                 else
                 {
-                    this.Close();
+                    textBox2.Clear();
+                    textBox9.Clear();
+                    comboBox2.Text = string.Empty;
+                    comboBox5.Text = string.Empty;
+                    comboBox6.Text = string.Empty;
+                    textBox7.Clear();
                 }
             }
             catch
