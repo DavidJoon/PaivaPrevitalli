@@ -38,7 +38,7 @@ namespace PaivaPrevitalli.View
 
                 return;
             }
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pichau\source\repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\david.jsilva7\source\repos\DavidJoon\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
             string query = "SELECT * FROM tbusuario WHERE loginUsuario = '" + textBox1.Text.Trim() + "' AND senhaUsuario = '" + textBox2.Text.Trim() + "' ";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
             DataTable dtbl = new DataTable();

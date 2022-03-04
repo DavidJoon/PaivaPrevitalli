@@ -23,7 +23,7 @@ namespace PaivaPrevitalli
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pichau\source\repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\david.jsilva7\source\repos\DavidJoon\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
         SqlCommand cmd;
         private void TelaEstoque_Load(object sender, EventArgs e)
         {
@@ -119,6 +119,18 @@ namespace PaivaPrevitalli
 
                 return;
             }
+            else if (textBox4.Text == "")
+            {
+                MessageBox.Show("Complete todos os campos", "Atenção");
+
+                return;
+            }
+            else if (pictureBox3.Image == null)
+            {
+                MessageBox.Show("Complete todos os campos", "Atenção");
+                
+                return;
+            }
 
             cmd = new SqlCommand("Insert into tbest(nomeest,categoriaest,corest,quantidadeest,descricaoest,imgest)Values(@nomeest,@categoriaest,@corest,@quantidadeest,@descricaoest,@imgest)", conn);
             cmd.Parameters.AddWithValue("nomeest", textBoxPesCodCli.Text);
@@ -145,7 +157,7 @@ namespace PaivaPrevitalli
         private void load_data()
         {
  
-            cmd = new SqlCommand("Select * from tbest order by IdEst desc", conn);
+            cmd = new SqlCommand("Select top 5 * from tbest order by IdEst desc", conn);
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
             DataTable dt = new DataTable();

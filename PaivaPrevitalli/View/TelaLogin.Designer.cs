@@ -260,6 +260,7 @@ namespace PaivaPrevitalli
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(89, 23);
             this.textBox6.TabIndex = 0;
+            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
             // 
             // label4
             // 

@@ -281,5 +281,13 @@ namespace PaivaPrevitalli
                 MessageBox.Show("Não existe este Nome", "Atenção");
             }
         }
+
+        private void textBox16_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
