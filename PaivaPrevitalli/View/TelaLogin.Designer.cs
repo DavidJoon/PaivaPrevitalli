@@ -41,6 +41,7 @@ namespace PaivaPrevitalli
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -185,6 +186,7 @@ namespace PaivaPrevitalli
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.textBox1);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.button2);
@@ -204,6 +206,14 @@ namespace PaivaPrevitalli
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pesquisar por Código";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(312, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(70, 23);
+            this.textBox1.TabIndex = 19;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress_1);
             // 
             // button3
             // 
@@ -236,7 +246,7 @@ namespace PaivaPrevitalli
             this.button2.BackColor = System.Drawing.Color.Bisque;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(210, 83);
+            this.button2.Location = new System.Drawing.Point(394, 32);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(72, 23);
             this.button2.TabIndex = 1;
@@ -258,9 +268,9 @@ namespace PaivaPrevitalli
             // 
             this.textBox6.Location = new System.Drawing.Point(106, 83);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(89, 23);
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(55, 23);
             this.textBox6.TabIndex = 0;
-            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
             // 
             // label4
             // 
@@ -284,11 +294,11 @@ namespace PaivaPrevitalli
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(157, 29);
+            this.label1.Location = new System.Drawing.Point(52, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 22);
+            this.label1.Size = new System.Drawing.Size(259, 22);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Digite o código para procurar";
+            this.label1.Text = "Digite o código para procurar:";
             // 
             // label2
             // 
@@ -449,6 +459,7 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.ToolStripMenuItem terminarSessãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

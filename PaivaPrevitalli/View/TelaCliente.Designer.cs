@@ -309,8 +309,9 @@ namespace PaivaPrevitalli
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Teste 1",
-            "Teste 2"});
+            "Site",
+            "Rede Social",
+            "Indicação"});
             this.comboBox1.Location = new System.Drawing.Point(213, 336);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
@@ -359,6 +360,7 @@ namespace PaivaPrevitalli
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(63, 23);
             this.textBox9.TabIndex = 28;
+            this.textBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox9_KeyPress);
             // 
             // label5
             // 
@@ -374,6 +376,7 @@ namespace PaivaPrevitalli
             // 
             this.textBox6.Location = new System.Drawing.Point(374, 249);
             this.textBox6.Name = "textBox6";
+            this.textBox6.PlaceholderText = "Ex: 00000-000";
             this.textBox6.Size = new System.Drawing.Size(129, 23);
             this.textBox6.TabIndex = 27;
             // 
@@ -435,6 +438,7 @@ namespace PaivaPrevitalli
             // 
             this.textBox4.Location = new System.Drawing.Point(374, 115);
             this.textBox4.Name = "textBox4";
+            this.textBox4.PlaceholderText = "Ex: 00 00000-0000";
             this.textBox4.Size = new System.Drawing.Size(129, 23);
             this.textBox4.TabIndex = 23;
             // 
@@ -452,6 +456,7 @@ namespace PaivaPrevitalli
             // 
             this.textBox3.Location = new System.Drawing.Point(143, 115);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "Ex: 00 0000-0000";
             this.textBox3.Size = new System.Drawing.Size(193, 23);
             this.textBox3.TabIndex = 22;
             // 
@@ -641,8 +646,9 @@ namespace PaivaPrevitalli
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Teste 1",
-            "Teste 2"});
+            "Site",
+            "Rede Social",
+            "Indicação"});
             this.comboBox2.Location = new System.Drawing.Point(215, 350);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 23);
@@ -783,7 +789,6 @@ namespace PaivaPrevitalli
             // 
             this.textBox33.Location = new System.Drawing.Point(336, 118);
             this.textBox33.Name = "textBox33";
-            this.textBox33.PlaceholderText = "Ex: 00/00/0000";
             this.textBox33.Size = new System.Drawing.Size(96, 23);
             this.textBox33.TabIndex = 7;
             // 
@@ -857,6 +862,7 @@ namespace PaivaPrevitalli
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(63, 22);
             this.textBox25.TabIndex = 12;
+            this.textBox25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox25_KeyPress);
             // 
             // textBox24
             // 

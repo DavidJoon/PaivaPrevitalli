@@ -48,10 +48,11 @@ namespace PaivaPrevitalli
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox6.Text == "")
+            if (textBox1.Text == "")
             {
                 MessageBox.Show("Digite um código para a busca", "Atenção");
-                textBox6.Focus();
+                textBox1.Focus();
+                textBox6.Clear();
                 textBox4.Clear();
                 textBox3.Clear();
                 textBox5.Clear();
@@ -60,7 +61,7 @@ namespace PaivaPrevitalli
             }
             else
             {
-                Usuario.Codigo = Convert.ToInt32(textBox6.Text);
+                Usuario.Codigo = Convert.ToInt32(textBox1.Text);
                 UsuarioController usuario = new UsuarioController();
                 usuario.visuCodigoUsuario();
                 textBox6.Text = Usuario.Codigo.ToString();
@@ -69,6 +70,7 @@ namespace PaivaPrevitalli
                 textBox5.Text = Usuario.SenhaUsuario;
                 button1.Enabled = true;
                 button3.Enabled = true;
+                textBox1.Clear();
             }
 
             if (Usuario.Retorno == "False")
@@ -84,6 +86,7 @@ namespace PaivaPrevitalli
             Usuario.NomeUsuario = "";
             Usuario.LoginUsuario = "";
             Usuario.SenhaUsuario = "";
+            textBox1.Clear();
             textBox6.Clear();
             textBox4.Clear();
             textBox3.Clear();
@@ -187,7 +190,7 @@ namespace PaivaPrevitalli
             Application.Exit();
         }
 
-        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox1_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
             {

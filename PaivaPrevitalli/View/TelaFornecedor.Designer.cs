@@ -42,11 +42,11 @@ namespace PaivaPrevitalli
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -58,6 +58,7 @@ namespace PaivaPrevitalli
             this.labelTitLogUsu = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@ namespace PaivaPrevitalli
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -230,11 +230,11 @@ namespace PaivaPrevitalli
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.textBox8);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.textBox7);
             this.groupBox3.Controls.Add(this.comboBox6);
             this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.comboBox5);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Controls.Add(this.comboBox2);
@@ -250,6 +250,13 @@ namespace PaivaPrevitalli
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Informações";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(242, 126);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(150, 22);
+            this.textBox8.TabIndex = 3;
             // 
             // label11
             // 
@@ -272,9 +279,33 @@ namespace PaivaPrevitalli
             // 
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
-            "Teste 1",
-            "Teste 2",
-            "Teste 3"});
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
             this.comboBox6.Location = new System.Drawing.Point(398, 124);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(98, 24);
@@ -289,18 +320,6 @@ namespace PaivaPrevitalli
             this.label14.Size = new System.Drawing.Size(43, 16);
             this.label14.TabIndex = 37;
             this.label14.Text = "Estado";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Teste 1",
-            "Teste 2",
-            "Teste 3"});
-            this.comboBox5.Location = new System.Drawing.Point(242, 124);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(150, 24);
-            this.comboBox5.TabIndex = 3;
             // 
             // label10
             // 
@@ -329,9 +348,12 @@ namespace PaivaPrevitalli
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Teste 1",
-            "Teste 2",
-            "Teste 3"});
+            "Móveis",
+            "Louças",
+            "Tecidos",
+            "Sublimação",
+            "MDF",
+            "Decorativos"});
             this.comboBox2.Location = new System.Drawing.Point(47, 124);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(189, 24);
@@ -361,7 +383,8 @@ namespace PaivaPrevitalli
             // 
             this.textBox9.Location = new System.Drawing.Point(398, 63);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(98, 22);
+            this.textBox9.PlaceholderText = "XX.XXX.XXX/0001-XX";
+            this.textBox9.Size = new System.Drawing.Size(143, 22);
             this.textBox9.TabIndex = 1;
             // 
             // label8
@@ -407,6 +430,7 @@ namespace PaivaPrevitalli
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.textBox10);
             this.groupBox4.Controls.Add(this.textBox5);
             this.groupBox4.Controls.Add(this.button6);
             this.groupBox4.Controls.Add(this.label12);
@@ -415,7 +439,6 @@ namespace PaivaPrevitalli
             this.groupBox4.Controls.Add(this.button3);
             this.groupBox4.Controls.Add(this.comboBox1);
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.comboBox3);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.comboBox4);
             this.groupBox4.Controls.Add(this.label4);
@@ -430,6 +453,13 @@ namespace PaivaPrevitalli
             this.groupBox4.TabIndex = 37;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Informações";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(240, 168);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(150, 22);
+            this.textBox10.TabIndex = 6;
             // 
             // textBox5
             // 
@@ -496,9 +526,33 @@ namespace PaivaPrevitalli
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Teste 1",
-            "Teste 2",
-            "Teste 3"});
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
             this.comboBox1.Location = new System.Drawing.Point(396, 168);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(98, 24);
@@ -514,18 +568,6 @@ namespace PaivaPrevitalli
             this.label2.TabIndex = 37;
             this.label2.Text = "Estado";
             // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Teste 1",
-            "Teste 2",
-            "Teste 3"});
-            this.comboBox3.Location = new System.Drawing.Point(240, 168);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(150, 24);
-            this.comboBox3.TabIndex = 6;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -540,9 +582,12 @@ namespace PaivaPrevitalli
             // 
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "Teste 1",
-            "Teste 2",
-            "Teste 3"});
+            "Móveis",
+            "Louças",
+            "Tecidos",
+            "Sublimação",
+            "MDF",
+            "Decorativos"});
             this.comboBox4.Location = new System.Drawing.Point(42, 168);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(189, 24);
@@ -572,7 +617,8 @@ namespace PaivaPrevitalli
             // 
             this.textBox3.Location = new System.Drawing.Point(396, 107);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(98, 22);
+            this.textBox3.PlaceholderText = "XX.XXX.XXX/0001-XX";
+            this.textBox3.Size = new System.Drawing.Size(145, 22);
             this.textBox3.TabIndex = 4;
             // 
             // label6
@@ -619,9 +665,9 @@ namespace PaivaPrevitalli
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(53, 33);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(259, 19);
+            this.label13.Size = new System.Drawing.Size(263, 19);
             this.label13.TabIndex = 33;
-            this.label13.Text = "Pesquisar Fornecedor Por Código";
+            this.label13.Text = "Pesquisar Fornecedor Por Código:";
             // 
             // tabPage4
             // 
@@ -800,14 +846,12 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label4;
@@ -821,5 +865,7 @@ namespace PaivaPrevitalli
         private System.Windows.Forms.TextBox textBoxPesCodCli;
         private System.Windows.Forms.Label labelPesCodCli;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem1;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox10;
     }
 }

@@ -47,7 +47,7 @@ namespace PaivaPrevitalli
 
                     return;
                 }
-                else if (comboBox5.Text == "")
+                else if (textBox8.Text == "")
                 {
                     MessageBox.Show("Complete todos os campos", "Atenção");
 
@@ -69,7 +69,7 @@ namespace PaivaPrevitalli
                 comando.Parameters.AddWithValue("@nome", textBox2.Text);
                 comando.Parameters.AddWithValue("@cnpj", textBox9.Text);
                 comando.Parameters.AddWithValue("@categoria", comboBox2.Text);
-                comando.Parameters.AddWithValue("@cidade", comboBox5.Text);
+                comando.Parameters.AddWithValue("@cidade", textBox8.Text);
                 comando.Parameters.AddWithValue("@estado", comboBox6.Text);
                 comando.Parameters.AddWithValue("@obs", textBox7.Text);
 
@@ -85,7 +85,7 @@ namespace PaivaPrevitalli
                     textBox2.Clear();
                     textBox9.Clear();
                     comboBox2.Text = string.Empty;
-                    comboBox5.Text = string.Empty;
+                    textBox8.Clear();
                     comboBox6.Text = string.Empty;
                     textBox7.Clear();
                 }
@@ -94,7 +94,7 @@ namespace PaivaPrevitalli
                     textBox2.Clear();
                     textBox9.Clear();
                     comboBox2.Text = string.Empty;
-                    comboBox5.Text = string.Empty;
+                    textBox8.Clear();
                     comboBox6.Text = string.Empty;
                     textBox7.Clear();
                 }
@@ -117,11 +117,12 @@ namespace PaivaPrevitalli
             if (textBox6.Text == "")
             {
                 MessageBox.Show("Digite um código para a busca", "Atenção");
-                textBox5.Focus();
+                textBox6.Focus();
+                textBox5.Clear();
                 textBox3.Clear();
                 textBox4.Clear();
                 comboBox4.Text = string.Empty;
-                comboBox3.Text = string.Empty;
+                textBox10.Clear();
                 comboBox1.Text = string.Empty;
                 textBox1.Clear();
               
@@ -136,7 +137,7 @@ namespace PaivaPrevitalli
                 textBox4.Text = Fornecedor.NomeFor;
                 textBox3.Text = Fornecedor.CnpjFor;
                 comboBox4.Text = Fornecedor.CategoriaFor;
-                comboBox3.Text = Fornecedor.CidadeFor;
+                textBox10.Text = Fornecedor.CidadeFor;
                 comboBox1.Text = Fornecedor.EstadoFor;
                 textBox1.Text = Fornecedor.ObsFor;
                 button3.Enabled = true;
@@ -164,10 +165,12 @@ namespace PaivaPrevitalli
             Fornecedor.CidadeFor = "";
             Fornecedor.EstadoFor = "";
             Fornecedor.ObsFor = "";
+            textBox6.Clear();
+            textBox5.Clear();
             textBox4.Clear();
             textBox3.Clear();
             comboBox4.Text = string.Empty;
-            comboBox3.Text = string.Empty;
+            textBox10.Clear();
             comboBox1.Text = string.Empty;
             textBox1.Clear();
 
@@ -182,7 +185,7 @@ namespace PaivaPrevitalli
             Fornecedor.NomeFor = textBox4.Text;
             Fornecedor.CnpjFor = textBox3.Text;
             Fornecedor.CategoriaFor = comboBox4.Text;
-            Fornecedor.CidadeFor = comboBox3.Text;
+            Fornecedor.CidadeFor = textBox10.Text;
             Fornecedor.EstadoFor = comboBox1.Text;
             Fornecedor.ObsFor = textBox1.Text;
             FornecedorController fornecedorController = new FornecedorController();

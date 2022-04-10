@@ -23,7 +23,7 @@ namespace PaivaPrevitalli
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\david.jsilva7\source\repos\DavidJoon\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Pichau\source\repos\PaivaPrevitalli\PaivaPrevitalli\bdpp.mdf;Integrated Security=True");
         SqlCommand cmd;
         private void TelaEstoque_Load(object sender, EventArgs e)
         {
@@ -80,7 +80,7 @@ namespace PaivaPrevitalli
 
         private void button9_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Selecione a imagem(*.jpg; *.png; *.bmp;) | *.jpg; *.png; *.bmp;";
+            openFileDialog1.Filter = "Selecione a imagem(*.jpg; *.jpeg; *.png; *.bmp;) | *.jpg; *.jpeg; *.png; *.bmp;";
             if(openFileDialog1.ShowDialog()== DialogResult.OK)
             {
                 pictureBox3.Image = Image.FromFile(openFileDialog1.FileName);
