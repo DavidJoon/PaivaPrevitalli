@@ -157,7 +157,7 @@ namespace PaivaPrevitalli
         private void load_data()
         {
  
-            cmd = new SqlCommand("Select top 5 * from tbest order by IdEst desc", conn);
+            cmd = new SqlCommand("Select top 999 * from tbest order by IdEst desc", conn);
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
             DataTable dt = new DataTable();
